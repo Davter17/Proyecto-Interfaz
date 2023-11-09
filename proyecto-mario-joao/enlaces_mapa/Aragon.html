@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aragon</title>
+    <link rel="stylesheet" href="../style/estilos.css">
+</head>
+<body class="exclusivo">
+  <header>
+    <div id="contenidoHeader">
+
+    <div class="logo">
+            <a href="../index.html"><img src="../images/icono.png" alt="logo"></a>
+    </div>
+
+    <div id="menu">
+        <button id="menuButton">&#9776;</button>
+    </div>
+
+    <div id="desplegable">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <button class="buttonHeader">Log in</button>
+        <button class="buttonHeader">Sign Up</button>
+    </div>
+
+    <div id="usuario">
+        <img src="../images/usuario.png" alt="icono usuario">
+    </div>
+    </div>
+  </header> 
+    <main>
+        <section id="seccion1">
+            <div class="fondo2">
+                <div id="caja_contenido">
+                  <h1 class="PaginaExperienciaH1">Aragon</h1>
+                </div>
+    
+            </div>
+            <div id="caja_contenido2">
+            <p class="PaginaExperienciaP">¡Bienvenidos a Aragón, la tierra de contrastes en el corazón de España! Esta región cautivadora te ofrece un viaje único a través de su historia, cultura y paisajes diversificados. Aragón es un tesoro para los amantes de la naturaleza, con los majestuosos Pirineos en el norte, perfectos para la práctica del esquí y el senderismo. El Parque Nacional de Ordesa y Monte Perdido es un paraíso para los amantes de la montaña, con cañones profundos y cascadas espectaculares. La capital, Zaragoza, te recibe con un patrimonio histórico impresionante. La Basílica del Pilar es un ícono arquitectónico, y la Aljafería es un testimonio de la rica herencia islámica de la región. La gastronomía aragonesa es un festín para el paladar. Prueba el cordero asado en el horno de leña, el ternasco, o disfruta de las migas y el bacalao en la Semana Santa. Los vinos de Somontano son una delicia para los amantes de la enología. Aragón también es conocido por su fervor cultural, con festivales de jota que celebran la música y el baile tradicional de la región. La región cuenta con numerosos pueblos pintorescos como Alquézar, Aínsa y Albarracín, con calles empedradas y arquitectura medieval que te transportarán a otra época. Aragón es el lugar perfecto para los amantes de la historia, la naturaleza y la cultura. Sumérgete en su riqueza y descubre la autenticidad de esta región en tu próximo viaje. ¡Bienvenidos a Aragón, una joya en el corazón de España!</p>
+            </div>
+        </section>
+        <h2 style="text-align: center;">Fotos y Videos de Aragon</h2>
+        <section id="seccion2">
+            <div class="columna">
+              <img src="../images/aragon6.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/aragon2.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/aragon3.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/aragon4.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/aragon5.png" alt="">
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/aragon_video2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/aragon_video3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/aragon_video4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/aragon_video5.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/aragon_video1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+        <div id="contenidoFooter">
+            <div class="logo">
+                <a href="index.html"><img src="../images/icono.png" alt="logo"></a>
+            </div>
+            <div id="finFooter">
+                <div id="redesSociales">
+                    <div> <a href="https://twitter.com/home?lang=es"> <img src="../images/twitter.webp" alt="twitter"></a></div>
+                    <div> <a href="https://www.instagram.com/"> <img src="../images/photoshop.webp" alt="instagram"></a></div>    
+                </div>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script>
+
+      document.getElementById('menuButton').addEventListener('click', function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active'); /* Alternar la clase 'active' */
+
+        var header = document.querySelector('header');
+        header.classList.toggle('expanded'); /* Alternar la clase 'expanded' */
+
+        var desplegable = document.querySelector('#desplegable');
+        desplegable.classList.toggle('verticalA'); /* Alternar la clase 'verticalA' */
+
+        var buttons = document.querySelectorAll('.buttonHeader');
+        buttons.forEach(function(button) {
+            button.classList.toggle('vertical'); /* Alternar la clase 'vertical' en cada botón */
+        });
+      });
+
+    </script>
+
+  </body>
+</html>

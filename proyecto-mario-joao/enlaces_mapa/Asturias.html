@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asturias</title>
+    <link rel="stylesheet" href="../style/estilos.css">
+</head>
+<body class="exclusivo">
+  <header>
+    <div id="contenidoHeader">
+
+    <div class="logo">
+            <a href="../index.html"><img src="../images/icono.png" alt="logo"></a>
+    </div>
+
+    <div id="menu">
+        <button id="menuButton">&#9776;</button>
+    </div>
+
+    <div id="desplegable">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <button class="buttonHeader">Log in</button>
+        <button class="buttonHeader">Sign Up</button>
+    </div>
+
+    <div id="usuario">
+        <img src="../images/usuario.png" alt="icono usuario">
+    </div>
+    </div>
+  </header>
+    <main>
+        <section id="seccion1">
+            <div class="fondo3">
+                <div id="caja_contenido">
+                  <h1 class="PaginaExperienciaH1">Asturias</h1>
+                </div>
+    
+            </div>
+            <div id="caja_contenido2">
+            <p class="PaginaExperienciaP">Descubre Asturias, un paraíso natural en el norte de España, donde la majestuosidad de la montaña se encuentra con la serenidad del mar Cantábrico. Conocida como "el paraíso natural", esta región te cautivará con sus paisajes impresionantes y su rica herencia cultural. El Principado de Asturias está enmarcado por las imponentes montañas de los Picos de Europa, ofreciendo una gran variedad de actividades al aire libre, desde el senderismo y la escalada hasta el esquí en invierno. Sus ríos y bosques vírgenes son un refugio para la vida silvestre y un regalo para los amantes de la naturaleza. Gijón y Oviedo, las principales ciudades de la región, te sorprenderán con su arquitectura histórica, museos de primer nivel y una vibrante escena gastronómica. Asturias es famosa por su fabada, un guiso de alubias y embutidos, y por su sidra, que se sirve de una manera única y tradicional llamada "escanciar". La costa asturiana es un espectáculo de acantilados escarpados, playas de arena dorada y encantadores pueblos pesqueros. Ribadesella, Llanes y Cudillero son solo algunos ejemplos de lugares pintorescos que te robarán el corazón. La cultura asturiana es rica y diversa, con festivales y celebraciones como el Descenso Internacional del Sella, una emocionante competición de piragüismo, y la Semana Santa, que se celebra con gran devoción en todo el principado. La música tradicional asturiana, con instrumentos como la gaita, es una parte fundamental de la identidad regional. Ven a Asturias y sumérgete en la belleza de sus paisajes naturales, la calidez de su gente y la riqueza de su cultura. Esta región es un tesoro en el norte de España, esperando a ser descubierto en tu próximo viaje. ¡Bienvenidos a Asturias, el paraíso natural de España!</p>
+            </div>
+        </section>
+        <h2 style="text-align: center;">Fotos y Videos de Asturias</h2>
+        <section id="seccion2">
+            <div class="columna">
+              <img src="../images/asturias2.jpg" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/asturias3.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/asturias4.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/asturias5.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/asturias6.png" alt="">
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/asturias_video1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/asturias_video2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/asturias_video3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/asturias_video4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/asturias_video5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+        <div id="contenidoFooter">
+            <div class="logo">
+                <a href="index.html"><img src="../images/icono.png" alt="logo"></a>
+            </div>
+            <div id="finFooter">
+                <div id="redesSociales">
+                    <div> <a href="https://twitter.com/home?lang=es"> <img src="../images/twitter.webp" alt="twitter"></a></div>
+                    <div> <a href="https://www.instagram.com/"> <img src="../images/photoshop.webp" alt="instagram"></a></div>    
+                </div>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script>
+
+      document.getElementById('menuButton').addEventListener('click', function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active'); /* Alternar la clase 'active' */
+
+        var header = document.querySelector('header');
+        header.classList.toggle('expanded'); /* Alternar la clase 'expanded' */
+
+        var desplegable = document.querySelector('#desplegable');
+        desplegable.classList.toggle('verticalA'); /* Alternar la clase 'verticalA' */
+
+        var buttons = document.querySelectorAll('.buttonHeader');
+        buttons.forEach(function(button) {
+            button.classList.toggle('vertical'); /* Alternar la clase 'vertical' en cada botón */
+        });
+      });
+
+    </script>
+</body>
+
+</html>

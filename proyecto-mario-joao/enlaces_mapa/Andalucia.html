@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andalucia</title>
+    <link rel="stylesheet" href="../style/estilos.css">
+</head>
+<body class="exclusivo">
+  <header>
+      <div id="contenidoHeader">
+
+      <div class="logo">
+              <a href="../index.html"><img src="../images/icono.png" alt="logo"></a>
+      </div>
+
+      <div id="menu">
+          <button id="menuButton">&#9776;</button>
+      </div>
+
+      <div id="desplegable">
+          <nav>
+              <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+              </ul>
+          </nav>
+          <button class="buttonHeader">Log in</button>
+          <button class="buttonHeader">Sign Up</button>
+      </div>
+
+      <div id="usuario">
+          <img src="../images/usuario.png" alt="icono usuario">
+      </div>
+      </div>
+  </header>
+    <main>
+        <section id="seccion1">
+            <div class="fondo">
+                <div id="caja_contenido">
+                  <h1 class="PaginaExperienciaH1">Andalucia</h1>
+                </div>
+    
+            </div>
+            <div id="caja_contenido2">
+            <p class="PaginaExperienciaP">Embárcate en una travesía por Andalucía, un rincón de España que te enamorará con su rica diversidad cultural y paisajística. Desde las doradas playas de la Costa del Sol hasta las escarpadas cumbres de Sierra Nevada, esta región ofrece un abanico de experiencias únicas. Las ciudades andaluzas son un festín para los sentidos. En Sevilla, déjate maravillar por la imponente catedral, el Alcázar y los aromáticos jardines. Córdoba te sumergirá en la historia con su famosa Mezquita-Catedral, un testimonio de la convivencia de culturas. Y en Granada, la Alhambra te transportará a un cuento de hadas con sus intricados detalles arquitectónicos y vistas panorámicas de la ciudad. La gastronomía andaluza es una delicia: prueba las tapas variadas en los bares de Málaga, disfruta del pescaíto frito en las playas de Cádiz o refréscate con el gazpacho en pleno verano. Andalucía es también el hogar del vino de Jerez, famoso en todo el mundo. La música flamenca, con sus pasiones y lamentos, forma parte del alma de Andalucía. Sumérgete en la magia del flamenco en tablaos de ciudades como Sevilla o Jerez de la Frontera. No puedes perderte las celebraciones efervescentes que se celebran a lo largo del año. La Feria de Abril en Sevilla es una fiesta de colores, trajes flamencos y caballos, mientras que la Semana Santa te transporta a un mundo de devoción y tradición en las calles de las ciudades andaluzas. Andalucía te recibe con una cálida hospitalidad y te invita a explorar su profunda herencia cultural, su impresionante belleza natural y su rica tradición culinaria. ¡No pierdas la oportunidad de descubrir esta región vibrante y apasionante en tu próximo viaje!</p>
+            </div>
+        </section>
+        <h2 style="text-align: center;">Fotos y Videos de Andalucia</h2>
+        <section id="seccion2">
+          
+            <div class="columna">
+              <img src="../images/andalucia8.png" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/andalucia4.jpeg" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/andalucia5.jpeg" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/andalucia6.jpeg" alt="">
+            </div>
+            <div class="columna">
+              <img src="../images/andalucia7.jpeg" alt="">
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/andalucia_video1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/andalucia_video2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/andalucia_video3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/andalucia_video4.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="columna">
+              <video controls>
+                <source src="../videos/andalucia_video5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+        <div id="contenidoFooter">
+            <div class="logo">
+                <a href="index.html"><img src="../images/icono.png" alt="logo"></a>
+            </div>
+            <div id="finFooter">
+                <div id="redesSociales">
+                    <div> <a href="https://twitter.com/home?lang=es"> <img src="../images/twitter.webp" alt="twitter"></a></div>
+                    <div> <a href="https://www.instagram.com/"> <img src="../images/photoshop.webp" alt="instagram"></a></div>    
+                </div>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script>
+
+      document.getElementById('menuButton').addEventListener('click', function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active'); /* Alternar la clase 'active' */
+
+        var header = document.querySelector('header');
+        header.classList.toggle('expanded'); /* Alternar la clase 'expanded' */
+
+        var desplegable = document.querySelector('#desplegable');
+        desplegable.classList.toggle('verticalA'); /* Alternar la clase 'verticalA' */
+
+        var buttons = document.querySelectorAll('.buttonHeader');
+        buttons.forEach(function(button) {
+            button.classList.toggle('vertical'); /* Alternar la clase 'vertical' en cada botón */
+        });
+      });
+
+    </script>
+</body>
+</html>

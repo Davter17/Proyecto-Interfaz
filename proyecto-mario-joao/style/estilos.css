@@ -1,0 +1,563 @@
+/* ------Estilos Generales------ */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* ------Header------ */
+header {
+    width: 100%;
+    background-color:rgb(112, 146, 150); 
+    margin-bottom: 5px;
+}
+
+#contenidoHeader{
+    display: flex;
+    height: 70px;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    min-width: 50px;
+}
+
+.logo img{
+    height: 50px !important;
+    width: 50px;
+}
+
+#usuario{
+    display: none;
+}
+
+#desplegable{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#menu {
+    display: none;
+}
+
+nav{
+    width: 40%;
+    margin-right: 25%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+nav ul li:hover{
+    background: rgb(170, 178, 179);
+    font-size: 25px;
+    border-radius: 1%;
+}
+
+#contenidoHeader button{
+    min-width: 75px;
+    height: 35px;
+    margin-left: 1%;
+    background: rgb(169, 220, 226);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 15%;
+    border-left: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#contenidoHeader button:hover{
+        background: rgb(170, 178, 179);
+        font-size: 20px;
+        border-radius: 1%;
+}
+
+/* ------Barra de Busqueda------ */
+
+#barra_busqueda{
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+#barra {
+    margin: 0 auto;
+    width: 70%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+}
+
+#barra:focus {
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+}
+
+#barra::-webkit-input-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+}
+
+#barra::-moz-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+}
+
+#barra:-ms-input-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+}
+
+
+    form > button {
+    width: 50px;
+    height: 45px;
+    padding: 10px;
+    background: rgb(112, 146, 150);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form > button:hover {
+  background: rgb(169, 220, 226);
+}
+
+form > button img {
+  filter: invert(100%); /* Invierte los colores del ícono al 100% (cambia los colores a blanco) */
+  transition: 0.3s; /* Transición para el cambio de color */
+}
+form > button:hover img {
+  filter: invert(0%); /* Cuando hover, invierte los colores al 0% (restablece los colores originales) */
+}
+
+/* ------Mapa------ */
+
+#map{
+    display: flex;
+}
+
+svg{
+padding-top:30px;
+width: 100%;
+min-height: 350px;
+max-height: 400px;
+overflow: visible;
+}
+
+path{
+    fill: rgb(242, 239, 233);
+    stroke: black;/*color lineas del mapa*/
+    stroke-width: 1px;/*tamaño de lineas del mapa*/
+    transition: fill 0.3s;/*tiempo de para cambiar de color*/
+}
+
+path:hover{
+    fill: rgb(112, 146, 150);
+}
+
+/* ------Experiencias------ */
+
+#experiencias{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.experiencias img{
+    width: 90%;
+    height: 200px;
+}
+
+.experiencias {
+    position: relative;
+    margin-bottom: 30px;
+    width: 30%;
+    text-align: center;
+}
+
+.botton_experiencia{
+    display: none;
+}
+
+.experiencias:hover .botton_experiencia{
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 10%;
+    border-radius: 5%;
+    background: rgb(169, 220, 226);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 15%;
+    border-left: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.experiencias:hover .botton_experiencia:hover{
+    background-color: rgb(170, 178, 179);
+    font-size: 20px;
+    border-radius: 1%;
+}
+
+h3{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h5{
+    padding-right: 8%;
+    padding-left: 8%;
+    text-align: center;
+}
+article{
+    border: 1px solid grey;
+    border-radius: 15%;
+    padding-top: 12px;
+}
+
+.experiencias img {
+  border: 2px solid #000;
+  border-radius: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------Footer------ */
+
+footer{
+    width: 100%;
+    background-color:rgb(112, 146, 150); 
+    padding-top: 10px;
+}
+
+#contenidoFooter{
+    display: flex;
+    height: 70px;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+#contenidoFooter img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+#finFooter{
+    margin-left: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#finFooter p{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-left: none;
+    text-align: center;
+}
+
+#redesSociales{
+    display: flex;
+    margin:auto;
+}
+
+
+/* ------PÁGINAS EXPERIENCIAS------ */
+
+/* ------Seccion1------ */
+#seccion1{
+    margin-bottom: 60px;
+}
+.fondo {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.729) 1%, rgba(0, 0, 0, 0.729) 1%), url(../images/andalucia3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Añade esto para centrar el contenido en el medio verticalmente */
+  }
+  .fondo2 {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.729) 1%, rgba(0, 0, 0, 0.205) 1%), url(../images//aragon1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Añade esto para centrar el contenido en el medio verticalmente */
+  }
+  .fondo3 {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.729) 1%, rgba(0, 0, 0, 0.729) 1%), url(../images/asturias1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Añade esto para centrar el contenido en el medio verticalmente */
+  }
+  
+  #caja_contenido {
+    width: 20%; 
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-sizing: border-box;
+  }
+  
+  .PaginaExperienciaH1{
+    color: rgb(255, 255, 255);
+  }
+
+  #caja_contenido2 {
+    padding-left: 100px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    margin: 40px; 
+    margin-left: 135px;
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+
+  #caja_contenido2 p {
+    margin: 0; 
+    font-size: 16px; 
+    color: #333;
+    line-height: 1.5; 
+  }
+  
+  .PaginaExperienciaP{
+    color: rgb(0, 0, 0);
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  
+/* ------Seccion 2------ */
+#seccion2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left:135px;
+  }
+  
+  .columna {
+    flex-basis: calc(20% - 20px); /* 20% de ancho para 5 columnas con margen de 20px */
+    margin: 10px; /* Margen entre las columnas */
+    padding: 10px; /* Relleno interno en cada columna */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde para cada columna */
+    text-align: center;
+    transition: 0.3s;
+  }
+  .columna:hover {
+    transform: scale(1.1); 
+    background-color:rgb(112, 146, 150);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.76);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* ------Media Querry------ */
+@media screen and (max-width: 768px) {
+
+    .logo{
+        order: 1;
+    }
+
+    #menu {
+        display: block;
+        width: 20%;
+    }
+    .experiencias {
+        width: 48%; 
+    }
+
+    form > button{
+        margin-top: 15px;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    #contenidoHeader button{
+        display: none;
+    }
+
+    #menu button{
+        display: block;
+        
+        min-width: 40px;
+        margin-left: 30px;
+    }
+
+    #usuario {
+        order: 2;
+        display: block;
+        min-width: 40px;
+        width: 100%;
+        text-align:end; 
+    }
+
+    #usuario img {
+        height: 40px;
+        
+    }
+    
+    nav ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Estilos para el header cuando se activa el menú */
+    header.expanded {
+        height: 350px;
+        flex-direction: column;
+    }       
+
+    #desplegable.verticalA{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #contenidoHeader button.vertical{
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav.active{
+        display: block;
+        margin-top: 300px;
+    }
+    nav.active ul {
+        flex-direction: column;
+    }
+
+    nav.active ul li {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }    
+
+    .PaginaExperienciaP{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .columna {
+    flex-basis: calc(33.33% - 20px); /* Cambia a 3 columnas por fila */
+    }
+    .columna:last-child {/*dejar el ultimo elemento en el medio en tamaño tableta*/
+    margin: 0 auto;
+    }
+    #caja_contenido2{
+    margin: auto;
+    }
+    #seccion2{
+    margin: auto;
+    }
+
+    footer{
+        height: 180px;
+    }
+
+    #contenidoFooter{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #finFooter{
+        margin: auto;
+        margin-top: 15px
+    }
+
+    #redesSociales{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .experiencias {
+        width: 100%; 
+    }
+    .PaginaExperienciaP{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .columna {
+        flex-basis: calc(50% - 20px); 
+      }
+    #caja_contenido2{
+      margin: auto;
+    }
+    #seccion2{
+      margin: auto;
+    }
+}
+

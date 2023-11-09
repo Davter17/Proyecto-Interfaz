@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cataluña</title>
+    <link rel="stylesheet" href="../style/estilos.css">
+</head>
+<body>
+    <!--Header-->
+   <header>
+        <div id="contenidoHeader">
+
+        <div class="logo">
+                <a href="../index.html"><img src="../images/icono.png" alt="logo"></a>
+        </div>
+
+        <div id="menu">
+            <button id="menuButton">&#9776;</button>
+        </div>
+
+        <div id="desplegable">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <button class="buttonHeader">Log in</button>
+            <button class="buttonHeader">Sign Up</button>
+        </div>
+
+        <div id="usuario">
+            <img src="../images/usuario.png" alt="icono usuario">
+        </div>
+        </div>
+    </header>
+
+    <!--Footer-->
+    <footer>
+        <div id="contenidoFooter">
+           <div class="logo">
+                 <a href="index.html"><img src="../images/icono.png" alt="logo"></a>
+           </div>
+           <div id="finFooter">
+                 <div id="redesSociales">
+                    <div> <a href="https://twitter.com/home?lang=es"> <img src="../images/twitter.webp" alt="twitter"></a></div>
+                    <div> <a href="https://www.instagram.com/"> <img src="../images/photoshop.webp" alt="instagram"></a></div>    
+                 </div>
+                 <p>Terms & Conditions</p>
+           </div>
+        </div>
+     </footer>
+
+     <!--SCRIPTS-->
+    <script>
+
+        document.getElementById('menuButton').addEventListener('click', function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active'); /* Alternar la clase 'active' */
+    
+        var header = document.querySelector('header');
+        header.classList.toggle('expanded'); /* Alternar la clase 'expanded' */
+    
+        var desplegable = document.querySelector('#desplegable');
+        desplegable.classList.toggle('verticalA'); /* Alternar la clase 'verticalA' */
+    
+        var buttons = document.querySelectorAll('.buttonHeader');
+        buttons.forEach(function(button) {
+            button.classList.toggle('vertical'); /* Alternar la clase 'vertical' en cada botón */
+        });
+        });
+    
+    </script>
+</body>
+</html>
