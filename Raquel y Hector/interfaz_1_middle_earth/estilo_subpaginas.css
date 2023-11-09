@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+  --beige: #ead7bb;
+  --beige_claro: #bca37f;
+  --beige_claro_transparent: #ead7bb38;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  flex-basis: 100%;
+  padding: 1%;
+  display: flex;
+}
+
+header div {
+  padding: 1%;
+  margin: 1% auto;
+}
+
+.divh1 {
+  flex-basis: 25%;
+  width: 5%;
+  margin: 0;
+  padding: 1%;
+}
+.imagen_logo {
+  width: 30%;
+  height: auto;
+}
+
+.divnav {
+  display: flex; /*flexbox para alinear elementos del navbar */
+  align-items: center; /* alinear verticalmente al centro */
+}
+
+.divnav li {
+  margin: 1%;
+}
+.divh6 {
+  flex-basis: 50%; /*esto es lo q hace q agigante estupidamente,,, mira jiar*/
+  display: flex;
+  max-height: 200px;
+  justify-content: center;
+}
+
+header div h1 {
+  flex-basis: 100%;
+  margin: 1% auto;
+  text-align: center;
+}
+
+header div nav {
+  flex-basis: 90%;
+}
+
+.divnav ul {
+  list-style: none; /* Quitar viñetas de la lista */
+  padding: 0; /* Eliminar el relleno por defecto de la lista */
+  display: flex; /* Usar flexbox para alinear elementos en la lista */
+  gap: 20px; /* Espacio entre elementos de la lista */
+}
+
+header div ul li {
+  flex-basis: 30%;
+  margin: 1% auto;
+  text-align: center;
+}
+
+header div h6 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 3% 5%;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  padding: 2%;
+}
+
+.divbocadillo {
+  display: none;
+}
+.diviconito {
+  display: none;
+}
+
+details {
+  display: none;
+}
+
+details > summary {
+  list-style-image: url(./img/barras.jpg);
+}
+
+details > ul li {
+  list-style: none;
+}
+details > nav ul li {
+  list-style: none;
+}
+details > li::marker {
+  list-style: none;
+}
+
+/*En version movil*/
+
+@media (max-width: 600px) {
+  .divnav {
+    display: none;
+  }
+
+  .divbocadillo {
+    display: block;
+  }
+
+  details {
+    display: block;
+  }
+
+  details {
+    display: block;
+  }
+
+  .divh6 {
+    display: none;
+  }
+
+  .diviconito {
+    display: block;
+    flex-basis: 10%;
+  }
+
+  .diviconito img {
+    width: 100%;
+  }
+  .imagen_logo {
+    width: 60%;
+    height: auto;
+  }
+} /*fin de media*/
+
+/*Main*/
+
+.divmain {
+  flex-basis: 90%;
+  margin: 1% auto;
+  padding: 0 4%;
+  justify-content: center;
+}
+
+main div {
+  display: flex;
+}
+main svg {
+  flex-basis: 100%;
+  min-height: 1000px;
+  margin: 0 auto;
+  background-image: url("./img/mordorjpg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main svg a path {
+  flex-basis: 100%;
+  fill: transparent;
+}
+path:hover {
+  fill: var(--beige_claro_transparent);
+}
+
+/*
+#divnav2 {
+	display: none;
+	}
+
+#divnav2:target {
+	display: block;
+	}
+*/
+
+/*PARTE BUSCADOR*/
+
+.container {
+  text-align: center;
+}
+
+.buscador {
+  display: inline-block;
+  font-size: 2rem;
+}
+input[type="submit"] {
+  /*boton submit*/
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  background-color: var(--beige);
+}
+input[type="submit"]:hover {
+  /*boton submit*/
+  background-color: var(--beige_claro);
+}
+
+input[type="search"] {
+  padding: 10px 32px; /* Search */
+}
+/*Fin parte buscador */
+
+/* PARTE IMAGENES */
+.titulo_experiencias {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.div_imagen {
+  width: 300px; /* Tamaño fijo en píxeles, no se me ocurre otra manera de solucionar esto :/ */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imagenes_body {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.experiencias-0 img,
+.experiencias-0 iframe {
+  margin-top: 1rem;
+  width: 60%;
+  padding: 1rem 2rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.experiencias-1 img,
+.experiencias-1 iframe {
+  margin-top: 1rem;
+  width: 60%;
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencias-2 img,
+.experiencias-2 iframe {
+  margin-top: 1rem;
+  width: 60%;
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+.texto_experiencias {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.div_imagen img:hover {
+  background-color: var(--beige_claro_transparent);
+}
+
+/* movil */
+@media (max-width: 767px) {
+  .imagenes_body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .experiencias-0 {
+    margin-top: 0rem;
+  }
+  .experiencias-1 {
+    margin-top: 0rem;
+  }
+  .experiencias-2 {
+    margin-top: 0rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    margin: 0 auto;
+  }
+
+  .imagenes_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .experiencias-0 {
+    width: 50%;
+    margin-top: 0rem;
+  }
+
+  .experiencias-1 {
+    width: 50%;
+    margin-top: 0rem;
+  }
+
+  .experiencias-2 img {
+    display: flex;
+  }
+
+  .experiencias-0,
+  .experiencias-2,
+  .experiencias-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .texto_experiencias {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .div_imagen {
+    width: 500px; /* Tamaño fijo en píxeles para el ancho */
+    height: auto; /* Altura ajustable automáticamente */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  background-color: var(--beige_claro);
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.logo_footer {
+  display: flex;
+  font-size: larger; /* borrar pruebas */
+  margin: 2% 20%;
+}
+.faq_footer {
+  margin: 2% 5%;
+}
+.faq_superior {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos i {
+  padding: 0 10px;
+}
+/*Fin footer */
+
+/* Subpaginas */
+.seccion {
+  display: flex;
+}
+.experiencia .texto {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 50%;
+}
+.experiencia h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-bottom: 4%;
+}
+.experiencia img {
+  width: 100%;
+  padding: 1%;
+}
