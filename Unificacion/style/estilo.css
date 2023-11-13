@@ -248,11 +248,13 @@ input,
   }
   
   .experiencia img {
-    max-height: 500px;
+    max-height: 400px;
     max-width: 300px;
+    width: 100%;
     padding: 0;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 12px;
   }
   
   .experiencia h3 {
@@ -294,6 +296,11 @@ input,
   
   .card-body .card-title {
     font-family: 'Luta', sans-serif;
+    margin-top: 50px;
+  }
+
+  .experiencia h3{
+    margin-top: 15px;
   }
   
   .card-body:hover {
@@ -310,6 +317,9 @@ input,
     padding: 2px;
   }
   
+  .card-front img{
+
+  }
   
   .card-back {
     align-items: center;
