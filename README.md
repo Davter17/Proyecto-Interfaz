@@ -79,7 +79,7 @@ Para usar el proyecto, se puede seguir el siguiente flujo de navegación:
 
  - *Íñigo de Claver Turel*
 
- - *Raquel García-Consuegra*
+ - *Raquel García-Consuegra Gutiérrez*
 
  - *Mario Picó Busquier*
 
