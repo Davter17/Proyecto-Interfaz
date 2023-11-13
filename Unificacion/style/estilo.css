@@ -14,7 +14,7 @@ header {
 }
 
 .bg-principal {
-    background-color: rgb(105, 43, 28);
+    background-color: rgb(223 134 23)
 }
 
 .bg-secundario {
@@ -26,7 +26,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: rgb(105, 43, 28);
+    color: rgb(223 134 23)
 }
 
 .color-secundario {
@@ -69,7 +69,7 @@ nav#movil summary {
 nav#movil .menu-movil {
     width: max-content;
     padding: 0;
-    border: 1px solid rgb(105, 43, 28);
+    border: 1px solid rgb(223 134 23)
     background-color: rgb(234, 225, 199);
     z-index: 1000;
     position: absolute;
@@ -86,7 +86,7 @@ nav#movil .menu-movil li {
 
 nav#movil .menu-movil li.btn {
     padding: 5px 0;
-    border-bottom: 1px solid rgb(105, 43, 28);
+    border-bottom: 1px solid rgb(223 134 23)
 
 }
 
@@ -94,7 +94,7 @@ nav#movil .menu-movil li a {
     text-decoration: none;
     display: block;
     padding: 10px 10px;
-    border-bottom: 1px solid rgb(105, 43, 28);
+    border-bottom: 1px solid rgb(223 134 23)
 }
 
 figure.logo {
@@ -110,10 +110,11 @@ figure.logo {
 
 button,
 .icon-user {
-    color: rgb(234, 225, 199);
+    /* color: rgb(234, 225, 199); */
+    color: rgb(255,255,255);
     border-radius: 3px;
-    background-color: rgb(105, 43, 28);
-    border: 1px solid rgb(234, 225, 199);
+    background-color: rgb(223 134 23);
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     padding: 5px;
     margin: 0;
@@ -121,14 +122,14 @@ button,
 
 button:hover,
 .icon-user:hover {
-    background-color: rgb(234, 225, 199);
-    color: rgb(105, 43, 28);
-    border: 1px solid rgb(105, 43, 28);
+    background-color: rgb(255, 255, 255);
+    color: rgb(223 134 23);
+    border: 1px solid rgb(223 134 23);
 }
 
 button:hover,
 .icon-user:hover svg {
-    fill: rgb(105, 43, 28);
+    fill: rgb(39, 81, 144);
 }
 
 #menu-principal ul {
@@ -178,8 +179,13 @@ button:hover,
     min-width: 350px;
 }
 
+.mapa svg path {
+    fill:rgb(223 134 23);
+}
+
 .mapa svg a:hover path {
-    fill: rgb(105, 43, 28);
+    fill:rgb(186, 110, 18);
+    /* fill: rgb(150 150 150); */
 }
 
 
@@ -206,13 +212,13 @@ input,
 .boton {
     margin: 0;
     border-radius: 3px;
-    border: 1px solid rgb(105, 43, 28);
+    border: 1px solid rgb(223 134 23);
     padding: .5em 2em;
 }
 
 .boton:hover {
-    background-color: rgb(234, 225, 199);
-    color: rgb(105, 43, 28);
+    background-color: rgb(255, 255, 255);
+    color: rgb(223 134 23);
 }
 
 
@@ -323,7 +329,7 @@ input,
     top: 0;
     transform: rotateY(180deg);
     width: 100%;
-    border: 5px solid #3078B4;
+    border: 5px solid rgb(223 134 23);
   }
   
   .card-back p {
@@ -331,7 +337,7 @@ input,
   }
   
   .card-back .card-title {
-    color: #3078B4;
+    color: rgb(223 134 23);
   }
   
   .card-title {
