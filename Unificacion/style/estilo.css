@@ -221,6 +221,56 @@ input,
     color: rgb(223 134 23);
 }
 
+/*********SECCIÓN FILTROS ******************/
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.filtros select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    height: 40px;
+    background-color: #FBEDCA;
+    outline: 1px solid #DF8662;
+    box-shadow: 0 0 5px #DF8617;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    justify-content: space-evenly;
+    cursor: pointer;    
+}
+
+/* Select abierto */
+.filtros select:focus {
+    outline: none;
+    border-color: #DF8617;
+    box-shadow: 0 0 5px #DF8617;
+}
+
+.filtros select:hover {
+    background-color: #FEF9EC;
+}
+
+.filtros select option{
+    background-color: #FBEDCA;
+}
+
+.filtros select option:hover{
+    background-color: red;
+}
+
+.filtros h2 {
+    text-align: center;
+}
 
 /*********SECCIÓN EXPERIENCIAS ******************/
 
