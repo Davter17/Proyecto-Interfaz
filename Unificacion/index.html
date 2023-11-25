@@ -834,9 +834,9 @@
                 <h2>Filtros de búsqueda</h2>
                 <select name="personas" id="personas">
                     <option value="">Personas</option>
-                    <option value="">1-2</option>
-                    <option value="">3-4</option>
-                    <option value="">4+</option>
+                    <option value=1-2">1-2</option>
+                    <option value="3-4">3-4</option>
+                    <option value="4+">4+</option>
                 </select>
                 <select name="localidad" id="localidad">
                     <option value="">Localidad</option>
@@ -855,6 +855,55 @@
                     <option value="50-75">50-75</option>
                     <option value="75-100">75-100</option>
                 </select>
+            </div>
+        </section>
+
+        <!-- FILTROS DE EXPERIENCIAS (MÓVIL)-->
+        <section class="filtros-movil">
+            <!-- Toggle de filtros (Móvil)-->
+            <div class="abrir">
+                <button id="abrir-filtros">Filtros</button>
+            </div>
+            <!-- Contenido -->
+            <div id="contenido-filtros" class="hidden">
+                <div id="precio">
+                    <h3>Precio</h3>
+                    <button value="0-25">0-25</button>
+                    <button value="25-50">25-50</button>
+                    <button value="50-75">50-75</button>
+                    <button value="75-100">75-100</button>
+                </div>
+                <div id="location">
+                    <h3>Localidad</h3>
+                    <!-- Madrid-->
+                    <input type="checkbox" id="madrid" name="madrid">
+                    <label for="madrid">Madrid</label><br>
+                    <!-- Barcelona -->
+                    <input type="checkbox" id="barcelona" name="barcelona">
+                    <label for="barcelona">Barcelona</label><br>
+                    <!-- Aragón -->
+                    <input type="checkbox" id="aragon" name="aragon">
+                    <label for="aragon">Aragón</label><br>
+                    <!-- Extremadura -->
+                    <input type="checkbox" id="extremadura" name="extremadura">
+                    <label for="extremadura">Extremadura</label><br>
+                    <!-- Andalucía -->
+                    <input type="checkbox" id="andalucia" name="andalucia">
+                    <label for="andalucia">Andalucía</label><br>
+                    <!-- Cataluña -->
+                    <input type="checkbox" id="catalunya" name="catalunya">
+                    <label for="catalunya">Cataluña</label><br>
+                    <!-- Galicia-->
+                    <input type="checkbox" id="galicia" name="galicia">
+                    <label for="galicia">Galicia</label><br>
+                </div>
+                <div id="personas">
+                    <h3>Número de personas</h3>
+                    <button value="1-2">1-2</button>
+                    <button value="3-4">3-4</button>
+                    <button value="4+">4+</button>
+                </div>
+                <button id="cerrar-filtros">Cerrar</button>
             </div>
         </section>
         <!-- FIN FILTROS DE EXPERIENCIAS -->
@@ -1150,7 +1199,6 @@
 
     </footer>
     <!-- FIN FOOTER-->
-
 </body>
 
 </html>

@@ -305,11 +305,10 @@ input,
 
 .filtros select {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   width: 200px;
   height: 40px;
   background-color: #FBEDCA;
+  border: none;
   outline: 1px solid #DF8662;
   box-shadow: 0 0 5px #DF8617;
   text-decoration: none;
@@ -336,15 +335,90 @@ input,
   background-color: #FBEDCA;
 }
 
-.filtros select option:hover{
-  background: red;
-}
-
 .filtros h2 {
   text-align: center;
 }
 
-/******************SECCIÓN EXPERIENCIAS ******************/
+/****************** SECCIÓN FILTROS (MÓVIL) ******************/
+
+.abrir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Toggle filtros (Móvil) */
+#abrir-filtros,
+#cerrar-filtros {
+  padding: 30px;
+  background-color: #FBEDCA;
+  font-size: medium;
+  color: #000;
+  outline: 2px solid orange; 
+  border: none;
+  outline: 1px solid #DF8662;
+  box-shadow: 0 0 5px #DF8617;
+  
+}
+
+#cerrar-filtros {
+  margin: 20px;
+  padding: 10px;
+}
+
+#abrir-filtros:hover,
+#cerrar-filtros:hover {
+  outline: 1px solid #DF8662;
+  background-color: #FEF9EC;
+  box-shadow: 0 0 5px #DF8617;
+}
+
+#filter-button {
+  width: 100px;
+  height: 100px;
+}
+
+#contenido-filtros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos sólo para checkbox */
+
+/* Ocultamos el checkbox original */
+#location input[type="checkbox"] {
+  display: none;
+}
+
+/* Creamos un nuevo checkbox */
+#location input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 1px;
+  background-color: #ffffff;
+  border: 1px solid #df8617;
+}
+
+/* Indicamos cuando está seleccionado */
+#location input[type="checkbox"]:checked + label:before {
+  background-color: #df8617;
+}
+
+#personas {
+  justify-content: space-evenly;
+}
+ 
+#personas button {
+  margin: 0 5px;
+  width: 26%;
+}
+
+/****************** SECCIÓN EXPERIENCIAS ******************/
 /* Tercera sección - Experiencias de usuario */
 .experiences-section {
     display: flex;
