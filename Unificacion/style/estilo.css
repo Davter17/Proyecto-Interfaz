@@ -367,6 +367,123 @@ input,
     text-align: justify;
   }
 
+  /*********PAGINA COLECCIONES ******************/
+  
+  #coleccion_visualizacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #coleccion_visualizacion img{
+    width: 20%;
+    height: 120px;
+  }
+
+  #coleccion_visualizacion button{
+    width: 20%;
+    height: 40px;
+    align-self: end;
+    display: flex;
+    align-items: center;
+  }
+
+  #coleccion_visualizacion button img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .coleccion_creada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .coleccion_separador{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .coleccion_separador_red{
+    background-color: red;
+  }
+
+  .coleccion_separador_green{
+    background-color: green;
+  }
+
+  .coleccion_separador_blue{
+    background-color: blue;
+  }
+
+  .coleccion_separador button {
+    all: unset;
+    width: 4% !important;
+    height: 20px !important;
+  }
+
+  .coleccion_separador img{
+    width: 80% !important;
+    height: 20px !important;
+    margin-right: 50px !important;
+    padding-bottom: 5px !important;
+  }
+  
+
+  .coleccion_info{
+    display: flex;
+  }
+
+  .coleccion_info h3, .coleccion_info p{
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .coleccion_info_txt{
+    width: 60%;
+  }
+
+  .coleccion_linea{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .coleccion_contenedor_experiencias{
+    display: flex;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    margin-bottom: 20px;
+  }
+
+  .coleccion_contenedor_experiencias .experiencia {
+    flex: 0 0 25%; /* Each experience takes up 33% of the container width */
+    margin: 0 1%; /* Add margin between experiences */
+  }
+
+  .coleccion_contenedor_experiencias::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .coleccion_contenedor_experiencias::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .coleccion_contenedor_experiencias::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+
   /*
 .seccion-experiencias {
     margin: 20px 0;
