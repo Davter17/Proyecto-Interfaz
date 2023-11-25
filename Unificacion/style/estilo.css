@@ -1,5 +1,5 @@
 * {
-    font-family: 'Comfortaa', sans-serif; 
+    font-family: 'Comfortaa', sans-serif;
     color: black;
 }
 
@@ -87,7 +87,6 @@ nav#movil .menu-movil li {
 nav#movil .menu-movil li.btn {
     padding: 5px 0;
     border-bottom: 1px solid rgb(223 134 23)
-
 }
 
 nav#movil .menu-movil li a {
@@ -111,7 +110,7 @@ figure.logo {
 button,
 .icon-user {
     /* color: rgb(234, 225, 199); */
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border-radius: 3px;
     background-color: rgb(223 134 23);
     border: 1px solid rgb(255, 255, 255);
@@ -183,18 +182,41 @@ button:hover,
     fill: rgb(250 250 250);
     stroke: rgb(223 134 23);
 }
-.mapa svg text{
-    font-size:7px;
-    fill:rgb(223 134 23);
+
+.mapa svg text {
+    font-size: 7px;
+    fill: rgb(223 134 23);
 }
+
 .mapa svg a:hover path {
-    fill:rgb(223 134 23);
+    fill: rgb(223 134 23);
     /* fill:rgb(186, 110, 18); */
 }
 
-.mapa svg a:hover text{
+.mapa svg a:hover text {
     fill: #89663B;
     /* fill:rgb(250 250  250); */
+}
+
+
+/** MIGAS DE PAN **/
+
+.breadcrump {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.breadcrump ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.breadcrump ul li a {
+    text-decoration: none;
+    color: rgb(223 134 23);
 }
 
 /*********SECCIÓN BUSQUEDA ******************/
@@ -216,19 +238,19 @@ button:hover,
     margin: 50px 0;
 }
 
-input,
+input,textarea,
 .boton {
     margin: 0;
     border-radius: 3px;
     border: 1px solid rgb(223 134 23);
-    padding: .5em 2em;
+    padding: .5em 1em;
+    color: white;
 }
 
 .boton:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(223 134 23);
 }
-
 
 /*********SECCIÓN EXPERIENCIAS ******************/
 
@@ -237,25 +259,25 @@ input,
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .experiencia-left,
-  .experiencia-mid,
-  .experiencia-right {
+}
+
+.experiencia-left,
+.experiencia-mid,
+.experiencia-right {
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .experiencia {
+}
+
+.experiencia {
     padding: 20px;
     max-width: fit-content;
     text-align: center;
-  }
-  
-  .experiencia img {
+}
+
+.experiencia img {
     max-height: 400px;
     max-width: 300px;
     width: 100%;
@@ -263,17 +285,17 @@ input,
     object-fit: cover;
     border-radius: 10px;
     margin-top: 12px;
-  }
-  
-  .experiencia h3 {
+}
+
+.experiencia h3 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s;
     margin: 0;
-  }
-  
-  .experiencia p {
+}
+
+.experiencia p {
     display: flex;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -284,9 +306,9 @@ input,
     align-items: center;
     text-align: justify;
     margin: 0;
-  }
-  
-  .card-body {
+}
+
+.card-body {
     backface-visibility: hidden;
     -webkit-backface-visibility: visible;
     -webkit-backface-visibility: hidden;
@@ -300,36 +322,34 @@ input,
     -webkit-transform-style: preserve-3d;
     transition: 0.7s ease;
     -webkit-transition: 0.7s ease;
-  }
-  
-  .card-body .card-title {
+}
+
+.card-body .card-title {
     font-family: 'Luta', sans-serif;
     margin-top: 50px;
-  }
+}
 
-  .experiencia h3{
+.experiencia h3 {
     margin-top: 15px;
-  }
-  
-  .card-body:hover {
+}
+
+.card-body:hover {
     cursor: pointer;
     transform: rotateY(180deg);
-  }
-  
-  .card-front {
+}
+
+.card-front {
     backface-visibility: hidden;
     -webkit-backface-visibility: visible;
     -webkit-backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     padding: 2px;
-  }
-  
-  .card-front img{
+}
 
-  }
-  
-  .card-back {
+.card-front img {}
+
+.card-back {
     align-items: center;
     background-color: #FDFEFF;
     backface-visibility: hidden;
@@ -348,67 +368,151 @@ input,
     transform: rotateY(180deg);
     width: 100%;
     border: 5px solid rgb(223 134 23);
-  }
-  
-  .card-back p {
+}
+
+.card-back p {
     color: #333;
-  }
-  
-  .card-back .card-title {
+}
+
+.card-back .card-title {
     color: rgb(222, 132, 23);
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 48px;
     letter-spacing: 1px;
     text-align: center;
     width: 100%;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     font-size: 14px;
     text-align: center;
-  }
-  
-  .card-back .card-text {
+}
+
+.card-back .card-text {
     padding: 20px;
     text-align: justify;
-  }
+}
 
-  /*********PAGINA COLECCIONES ******************/
-  
-  #coleccion_visualizacion{
+/*********PAGINA COLECCIONES ******************/
+
+#coleccion_nueva {
+    margin-bottom: 20px;
+}
+
+#coleccion_nueva .contenedor_filas {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: flex-end;
+}
+
+#coleccion_nueva .centrado {
+    align-items: center;
+}
+
+#coleccion_nueva .contenedor_columnas {
+    display: flex;
+    flex-direction: column;
+}
+
+#coleccion_nueva .w20 {
+    flex-basis: 20%;
+}
+
+#coleccion_nueva .w20 .imagen_coleccion {
+    width: 100%;
+    background-color: #aaa;
+}
+
+#coleccion_nueva .w80 {
+    flex-basis: 80%;
+}
+
+#coleccion_nueva .contenedor_filas_form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+#coleccion_nueva .w100 {
+    flex-basis: 100%;
+}
+
+#coleccion_nueva #form_nombre_coleccion {
+    flex-basis: 100%;
+}
+
+#coleccion_nueva input[type="file"] {
+    padding: 0;
+    width: 100%;
+}
+#coleccion_nueva input.selector_color{
+    padding: 0;
+}
+
+#coleccion_nueva input[type="file"]::file-selector-button {
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid rgb(223 134 23);
+    padding: .5em .5em;
+    background-color: rgb(223 134 23);
+    color: white;
+    width: 100%;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#coleccion_nueva input[type="file"]::-ms-browse:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(223 134 23);
+}
+
+#coleccion_nueva input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(223 134 23);
+}
+
+#coleccion_nueva input[type="file"]::file-selector-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(223 134 23);
+}
+
+#coleccion_visualizacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  #coleccion_visualizacion img{
+#coleccion_visualizacion img {
     width: 20%;
     height: 120px;
-  }
+}
 
-  #coleccion_visualizacion button{
+#coleccion_visualizacion button {
     width: 20%;
     height: 40px;
     align-self: end;
     display: flex;
     align-items: center;
-  }
+}
 
-  #coleccion_visualizacion button img {
+#coleccion_visualizacion button img {
     height: 30px;
     width: 30px;
-  }
-  
-  .coleccion_creada{
+}
+
+.coleccion_creada {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* width: 70%; */
-  }
+}
 
-  .coleccion_separador{
+.coleccion_separador {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 25px;
@@ -417,82 +521,85 @@ input,
     display: flex;
     justify-content: end;
     align-items: center;
-  }
+}
 
-  .coleccion_separador_red{
+.coleccion_separador_red {
     background-color: red;
-  }
+}
 
-  .coleccion_separador_green{
+.coleccion_separador_green {
     background-color: green;
-  }
+}
 
-  .coleccion_separador_blue{
+.coleccion_separador_blue {
     background-color: blue;
-  }
+}
 
-  .coleccion_separador button {
+.coleccion_separador button {
     all: unset;
     width: 4% !important;
     height: 20px !important;
-  }
+}
 
-  .coleccion_separador img{
+.coleccion_separador img {
     width: 80% !important;
     height: 20px !important;
     margin-right: 50px !important;
     padding-bottom: 5px !important;
-  }
-  
+}
 
-  .coleccion_info{
+
+.coleccion_info {
     display: flex;
-  }
+}
 
-  .coleccion_info h3, .coleccion_info p{
+.coleccion_info h3,
+.coleccion_info p {
     margin-top: 5px;
     margin-left: 10px;
-  }
+}
 
-  .coleccion_info_txt{
+.coleccion_info_txt {
     width: 60%;
-  }
+}
 
-  .coleccion_linea{
+.coleccion_linea {
     width: 100%;
     height: 2px;
     background-color: gray;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .coleccion_contenedor_experiencias{
+.coleccion_contenedor_experiencias {
     display: flex;
-    overflow-x: scroll; 
+    overflow-x: scroll;
     overflow-y: hidden;
     margin-bottom: 20px;
-  }
+}
 
-  .coleccion_contenedor_experiencias .experiencia {
-    flex: 0 0 25%; /* Each experience takes up 33% of the container width */
-    margin: 0 1%; /* Add margin between experiences */
-  }
+.coleccion_contenedor_experiencias .experiencia {
+    flex: 0 0 25%;
+    /* Each experience takes up 33% of the container width */
+    margin: 0 1%;
+    /* Add margin between experiences */
+}
 
-  .coleccion_contenedor_experiencias::-webkit-scrollbar {
+.coleccion_contenedor_experiencias::-webkit-scrollbar {
     height: 12px;
-  }
-  
-  .coleccion_contenedor_experiencias::-webkit-scrollbar-thumb {
+}
+
+.coleccion_contenedor_experiencias::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
-  }
-  
-  .coleccion_contenedor_experiencias::-webkit-scrollbar-track {
+}
+
+.coleccion_contenedor_experiencias::-webkit-scrollbar-track {
     background-color: #f1f1f1;
     border-radius: 10px;
-  }
+}
 
-  /*
+/*
 .seccion-experiencias {
     margin: 20px 0;
 }
@@ -607,25 +714,25 @@ footer .enlaces a:hover {
     align-items: center;
     box-sizing: border-box;
     border: 1px solid rgb(234, 225, 199);
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
     border-radius: 3px;
 }
 
-.imagenes a{
+.imagenes a {
     height: 100%;
 }
 
-.imagenes img{
+.imagenes img {
     height: 100%;
     transition: transform 1s;
 }
 
-.imagenes iframe{
+.imagenes iframe {
     height: 100%;
 }
 
 .imagenes img:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 /* ----- breakpoint para controlar punt de ruptura del margen --- */
