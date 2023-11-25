@@ -1,5 +1,5 @@
 * {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', sans-serif; 
     color: black;
 }
 
@@ -174,20 +174,26 @@ button:hover,
 
 .mapa {
     margin: auto;
-    max-width: 700px;
+    max-width: 850px;
     width: 100%;
     min-width: 350px;
 }
 
 .mapa svg path {
+    fill: rgb(250 250 250);
+    stroke: rgb(223 134 23);
+}
+.mapa svg text{
+    font-size:7px;
     fill:rgb(223 134 23);
 }
-
 .mapa svg a:hover path {
-    fill:rgb(186, 110, 18);
-    /* fill: rgb(150 150 150); */
+    fill:rgb(223 134 23);
+    /* fill:rgb(186, 110, 18); */
 }
-
+.mapa svg a:hover text{
+    fill:rgb(250 250  250);
+}
 
 /*********SECCIÓN BUSQUEDA ******************/
 /* propiedades de la seccion2 donde se encuentra la caja de busqueda */
@@ -397,7 +403,7 @@ input,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    /* width: 70%; */
   }
 
   .coleccion_separador{
