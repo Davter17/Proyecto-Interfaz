@@ -40,7 +40,7 @@
                 </a>
             </figure>
 
-            <!-- inicio barra navegación -->
+            <!-- Inicio barra de navegación -->
             <nav id="menu-principal">
                 <ul>
                     <li><a href="/">Inicio</a></li>
@@ -51,7 +51,7 @@
                 </ul>
             </nav>
 
-            <!-- caja con botenes para incio de sesion y dar de alta usuario -->
+            <!-- Caja con botenes para incio de sesión y dar de alta usuario -->
             <div class="botones-sesion">
                 <button type="button">Iniciar sesión</button>
                 <button type="button">Alta usuario</button>
@@ -69,12 +69,19 @@
     </header>
     <!-- FIN HEADER -->
 
+    <!-- BREADCRUMBS -->
+    <section class="breadcrumbs">
+        <div class="breadcrumb flat">
+            <a href="#">Spain Experiences</a>
+            <a href="#" class="active" target="_self">Inicio</a>
+          </div>
+    </section>
+
     <!-- CUERPO -->
     <main>
 
         <!-- MAPA -->
-        <!-- inicio primera sección del cuerpo, contiene el mapa -->
-
+        <!-- Inicio de la primera sección del cuerpo, contiene el mapa -->
         <section class="seccion-mapa">
             <div class="contenedor contenedor-mapa">
                 <h2>Mapa</h2>
@@ -808,9 +815,8 @@
         </section>
         <!-- FIN MAPA -->
 
-
-        <!-- BUSQUEDA -->
-        <!-- inicio segunda sección del cuerpo contiene la caja de búsqueda -->
+        <!-- BÚSQUEDA -->
+        <!-- Inicio de la segunda sección del cuerpo que contiene la caja de búsqueda -->
         <section class="busqueda">
             <h2>Área de busqueda</h2>
             <div class="contenendor contenedor-busqueda">
@@ -820,11 +826,41 @@
                 </form>
             </div>
         </section>
-        <!-- FIN BUSQUEDA -->
+        <!-- FIN BÚSQUEDA -->
+
+        <!-- FILTROS DE EXPERIENCIAS -->
+        <section class="filtros">  
+            <div class="botones-filtros">
+                <h2>Filtros de búsqueda</h2>
+                <select name="personas" id="personas">
+                    <option value="">Personas</option>
+                    <option value="">1-2</option>
+                    <option value="">3-4</option>
+                    <option value="">4+</option>
+                </select>
+                <select name="localidad" id="localidad">
+                    <option value="">Localidad</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="aragon">Aragón</option>
+                    <option value="extremadura">Extremadura</option>
+                    <option value="andalucia">Andalucía</option>
+                    <option value="catalunya">Cataluña</option>
+                    <option value="galicia">Galicia</option>
+                </select>
+                <select name="precio" id="precio">
+                    <option value="">Precio (€)</option>
+                    <option value="0-25">0-25</option>
+                    <option value="25-50">25-50</option>
+                    <option value="50-75">50-75</option>
+                    <option value="75-100">75-100</option>
+                </select>
+            </div>
+        </section>
+        <!-- FIN FILTROS DE EXPERIENCIAS -->
 
         <!-- EXPERIENCIAS -->
-        <!-- inicio tercera sección del cuepro, contiene una selección de experiencias -->
-
+        <!-- Inicio de la tercera sección del cuepro, contiene una selección de experiencias -->
         <section class="experiences-section">
             <!-- Primera columna -->
             <div class="experiencia-left">
@@ -1062,13 +1098,9 @@
             </div>
             </div>
         </section>
-
         <!-- FIN EXPERIENCIAS -->
-
     </main>
     <!-- FIN CUERPO -->
-
-
 
     <!--  INICIO FOOTER -->
     <footer class="bg-principal color-secundario">
