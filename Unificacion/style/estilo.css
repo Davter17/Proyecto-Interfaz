@@ -164,7 +164,7 @@ button:hover,
   /*box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);*/ 
   overflow: hidden;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .breadcrumb a {
@@ -273,8 +273,8 @@ button:hover,
 }
 
 
-/** MIGAS DE PAN **/
-
+/** MIGAS DE PAN  (ISRAEL)**/
+/* 
 .breadcrump {
     width: 100%;
     margin: 1em 0;
@@ -291,7 +291,7 @@ button:hover,
 .breadcrump ul li a {
     text-decoration: none;
     color: rgb(223 134 23);
-}
+} */
 
 /******************* SECCIÓN BUSQUEDA ******************/
 /* Propiedades de la seccion2 donde se encuentra la caja de búsqueda */
