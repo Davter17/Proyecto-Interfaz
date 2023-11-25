@@ -129,7 +129,7 @@ button:hover,
 
 button:hover,
 .icon-user:hover svg {
-    fill: rgb(39, 81, 144);
+    fill: rgb(223 134 23);
 }
 
 #menu-principal ul {
@@ -176,7 +176,7 @@ button:hover,
     margin: auto;
     max-width: 850px;
     width: 100%;
-    min-width: 350px;
+    min-width: 450px;
 }
 
 .mapa svg path {
@@ -191,8 +191,10 @@ button:hover,
     fill:rgb(223 134 23);
     /* fill:rgb(186, 110, 18); */
 }
+
 .mapa svg a:hover text{
-    fill:rgb(250 250  250);
+    fill: #89663B;
+    /* fill:rgb(250 250  250); */
 }
 
 /*********SECCIÓN BUSQUEDA ******************/
@@ -353,7 +355,7 @@ input,
   }
   
   .card-back .card-title {
-    color: rgb(223 134 23);
+    color: rgb(222, 132, 23);
   }
   
   .card-title {
