@@ -1,6 +1,7 @@
 * {
     font-family: 'Comfortaa', sans-serif;
     color: black;
+    font-weight:700;
 }
 
 body {
@@ -253,13 +254,15 @@ button:hover,
 }
 
 .mapa svg path {
-    fill: rgb(250 250 250);
-    stroke: rgb(223 134 23);
+    fill: rgb(211, 211, 211);
+    stroke: rgb(255, 255, 255);
 }
 
 .mapa svg text {
-    font-size: 7px;
+    font-size: 8px;
+    font-weight: 700;
     fill: rgb(223 134 23);
+    z-index: 250;
 }
 
 .mapa svg a:hover path {
@@ -689,10 +692,17 @@ input,textarea,
     align-items: center;
 }
 
-#coleccion_visualizacion img {
+#coleccion_visualizacion .imagen {
     width: 20%;
     height: 120px;
+    overflow: hidden;
 }
+
+#coleccion_visualizacion .imagen  img {
+  width: 100%;
+  height: 100;
+}
+
 
 #coleccion_visualizacion button {
     width: 20%;
