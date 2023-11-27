@@ -276,26 +276,6 @@ button:hover,
 }
 
 
-/** MIGAS DE PAN  (ISRAEL)**/
-/* 
-.breadcrump {
-    width: 100%;
-    margin: 1em 0;
-}
-
-.breadcrump ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-}
-
-.breadcrump ul li a {
-    text-decoration: none;
-    color: rgb(223 134 23);
-} */
-
 /******************* SECCIÓN BUSQUEDA ******************/
 /* Propiedades de la seccion2 donde se encuentra la caja de búsqueda */
 
@@ -598,6 +578,18 @@ input,textarea,
 .card-back .card-text {
     padding: 20px;
     text-align: justify;
+}
+
+.card-back .icons_buttons ul{
+  display: flex;
+  gap:20%;
+  padding: 0;
+  list-style: none;
+}
+
+.card-back .icons_buttons ul svg{
+  fill:#df8617;
+  height:2rem;
 }
 
 /*********PAGINA COLECCIONES ******************/
