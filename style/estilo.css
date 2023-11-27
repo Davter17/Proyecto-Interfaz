@@ -893,6 +893,223 @@ input,textarea,
 }
 
 
+
+/***************** ESTILO PÁGINA EXPERIENCIAS*/
+
+
+
+/* imagen principal experiencia*/
+.imgExperiencia {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-principal {
+  position: relative;
+  text-align: center;
+  /* color: rgb(176, 56, 56); */
+  overflow: hidden; /* Asegura que el contenido difuminado no se desborde */
+}
+
+.titulo-superpuesto {
+  position: absolute;
+  top: 80%; /*posicion titulo vertical*/
+  left: 50%;
+  transform: translate(-50%, -50%); /*centra el texto*/
+  font-size: 40px; /* tamaño del texto */
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.infoExperiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  /* overflow: hidden; */
+}
+.descripcion {
+  flex-basis: 60%;
+  flex: 1;
+  max-width: 600px; /* Ajusta el ancho máximo del article según tus necesidades */
+  padding: 20px;
+}
+.infoExperiencia aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infoExperiencia aside img {
+  width: 20px;
+}
+.infoExperiencia aside h4 {
+  text-align: center;
+}
+
+.infoUtil {
+  background-color: #f0f0f0;
+  border-radius: 6px; 
+  border-style: solid;
+  border-color: #DF8617;
+  margin: 5px;
+  
+}
+.infoUtil li {
+  list-style: none;
+}
+
+.reacciones-experiencia {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* mediaquweries para moviles <600px */
+@media screen and (max-width: 600px) {
+
+.infoExperiencia{
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.infoUtil{
+  flex-basis: 50%;
+ order: -1;
+
+}
+
+
+
+}
+
+
+
+/* ESTILOS AREA DE COMENTARIOS */
+
+#area_comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#comentarios_usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#comentarios_usuario img {
+  width: 40px;
+  padding-right: 10px;
+  padding-bottom: 60px;
+}
+
+#comentarios_usuario textarea {
+  width: 700px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 3px;
+  resize: none;
+  border: 1px solid rgb(223 134 23);
+  box-shadow: rgba(100, 100, 111, 0.61) 0px 7px 29px 0px;
+}
+
+#envio {
+  margin-top: 10px;
+  margin-left: 660px;
+  width: 100px;
+}
+
+.otros_comentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linea-separadora {
+  width: 50%;
+  border-top: 1px solid rgb(223 134 23);
+  margin: 20px 0;
+}
+
+.caja_comentario {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+#imagen_usuario {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+#imagen_usuario img {
+  width: 50px;
+  border: 2px solid rgb(223 134 23);
+}
+#enviar_movil{
+  display: none;
+}
+
+/* --------breakpoints para tabletas < 768 px */
+@media screen and (max-width: 768px) {
+  #comentarios_usuario textarea {
+  width: 550px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 3px;
+  resize: none;
+  border: 1px solid rgb(223 134 23);
+  }
+  #comentarios_usuario img {
+      width: 40px;
+      padding-right: 10px;
+      padding-bottom: 8px;
+  }
+  #envio {
+      display: none;
+  }
+  #enviar_movil{
+      display: block;
+      padding-left: 5px;
+      padding-top: 10px;
+      cursor: pointer;
+  }
+  .caja_comentario {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+  }
+
+}
+/* --------breakpoints para movil < 600 px */
+@media screen and (max-width: 600px) {
+  #comentarios_usuario textarea {
+      width: 400px;
+      height: 40px;
+      margin-top: 10px;
+      border-radius: 3px;
+      resize: none;
+      border: 1px solid rgb(223 134 23);
+      }
+      #comentarios_usuario img {
+          width: 35px;
+          padding-right: 10px;
+          padding-bottom: 1px;
+      }
+  .caja_comentario {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      }
+}
+
+/* FIN DE ESTILOS AREA DE COMENTARIOS */
+
+
 /****************** FOOTER ******************/
 
 
