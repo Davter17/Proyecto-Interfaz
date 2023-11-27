@@ -276,26 +276,6 @@ button:hover,
 }
 
 
-/** MIGAS DE PAN  (ISRAEL)**/
-/* 
-.breadcrump {
-    width: 100%;
-    margin: 1em 0;
-}
-
-.breadcrump ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-}
-
-.breadcrump ul li a {
-    text-decoration: none;
-    color: rgb(223 134 23);
-} */
-
 /******************* SECCIÓN BUSQUEDA ******************/
 /* Propiedades de la seccion2 donde se encuentra la caja de búsqueda */
 
@@ -600,6 +580,18 @@ input,textarea,
     text-align: justify;
 }
 
+.card-back .icons_buttons ul{
+  display: flex;
+  gap:20%;
+  padding: 0;
+  list-style: none;
+}
+
+.card-back .icons_buttons ul svg{
+  fill:#df8617;
+  height:2rem;
+}
+
 /*********PAGINA COLECCIONES ******************/
 
 #coleccion_nueva {
@@ -749,16 +741,15 @@ input,textarea,
     background-color: blue;
 }
 
-.coleccion_separador button {
-    all: unset;
-    width: 4% !important;
+.coleccion_separador a {
+    width: 20px !important;
     height: 20px !important;
+    margin-right: 10px;
 }
 
 .coleccion_separador img {
-    width: 80% !important;
+    width: 20px !important;
     height: 20px !important;
-    margin-right: 50px !important;
     padding-bottom: 5px !important;
 }
 
@@ -795,6 +786,7 @@ input,textarea,
   .coleccion_contenedor_experiencias .experiencia {
     flex: 0 0 25%;
     margin: 0 1%;
+    min-width: 200px;
   }
 
 .coleccion_contenedor_experiencias::-webkit-scrollbar {
@@ -815,6 +807,48 @@ input,textarea,
 .coleccion_contenedor_experiencias .experiencia img{
   max-height: 175px;
 }
+
+@media only screen and (max-width: 900px) {
+  div.coleccion_creada{
+    width: 100%;
+  }  
+
+  .coleccion_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #coleccion_nueva .contenedor_filas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .w100, .w100 .boton{
+    margin-top: 20px;
+  }
+
+
+  .coleccion_info button{
+    margin-right: 20px;
+    min-width: 120px;
+  }
+
+  .coleccion_info .imagen{
+    width: 100% !important;
+  }
+
+
+  .coleccion_info img{
+    width: 100%;
+  }
+
+  .coleccion_info_txt{
+    width: 100%;
+  }
+}
+
 /* Bloque CSS: Pendiente de modificar o eliminar. [Comentario de: Sandra]
 
 .seccion-experiencias {
