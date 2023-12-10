@@ -1257,6 +1257,23 @@ footer .enlaces a:hover {
   transform: scale(1.5);
 }
 
+
+.contacto .formContacto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacto .formContacto input,
+.contacto .formContacto textarea{
+  width: 100%;
+  margin: 10px 0;
+}
+.contacto .formContacto label{
+  margin-top: 20px;
+}
+
+
 /****************** BREAKPOINTS / MEDIA QUERIES ******************/
 
 /* ----- breakpoint para controlar punt de ruptura del margen --- */
