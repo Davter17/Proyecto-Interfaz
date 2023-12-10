@@ -1332,6 +1332,14 @@ input[type="file"] {
   color: #DF8617;
 }
 
+#ayuda-login {
+  text-decoration: none;
+  color: #DF8617;
+}
+
+#ayuda-login:hover {
+  color: #383c4b;
+}
 
 /****************** FOOTER ******************/
 
