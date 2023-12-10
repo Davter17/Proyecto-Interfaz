@@ -1165,6 +1165,167 @@ textarea{
 /* FIN RANKING */
 
 
+/****************** PÁGINA NUEVA_EXPERIENCIA.HTML ******************/
+
+.divformulario {
+  margin: 1% auto;
+  width: 90%;
+  padding: 1%;
+}   
+
+.divformulario div {
+  margin: 1% auto;
+  flex-basis: 95%;
+  display: flex;
+  flex-basis: 95%;
+  padding: 1%;
+}
+
+.tit_cat {
+  justify-content: space-around;
+}
+
+.textoarea>label {
+  width: 30%;
+}
+
+input[type="text"] {
+  width: 300px;
+  color: #DF8617;
+}
+
+input[type="textarea"] {
+  width: 70%;
+  min-height: 150px;
+  color: #DF8617;
+}
+
+input[type="file"] {
+  width: 70%;
+  min-height: 150px;
+}
+
+.imagenes_nuevaexp > label {
+  margin: 20px;
+}
+
+.imagenes_nuevaexp {
+  justify-content: space-around;
+}
+
+.colaboradores {
+  flex-direction: column;
+}
+
+.colaboradores label {
+  font-weight: 800;
+  margin: 1%;
+}
+
+.colaboradores>input {
+  width: 60%;
+  margin: 1%;
+}
+
+.enviar {
+  width: 99%;
+  text-align: center;
+  margin: 2% auto;
+}
+
+.enviar>input {
+  width: 60%;
+  padding: 1% 3%;
+  text-align: center;
+  margin: 2% auto;
+  background-color: #DF8617;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.enviar>input:hover {
+  background-color: white;
+  color: #DF8617;
+  border: 1px solid #DF8617;
+}
+
+@media (max-width: 600px) {
+
+  .tit_cat,
+  .textoarea,
+  .imagenes_nuevaexp,
+  .colaboradores,
+  .enviar {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .tit_cat>input,
+  .tit_cat>label,
+  .textoarea>input,
+  .textoarea>label,
+  .imagenes_nuevaexp>input,
+  .imagenes_nuevaexp>label,
+  .enviar>input {
+      margin: 1% auto;
+      width: 99%;
+
+  }
+
+  input[type="textarea"] {
+      min-height: 100px;
+  }
+
+  /* Para centrarlo
+ input[type="file"]{
+     width: 80%;
+  }*/
+
+  .colaboradores {
+      flex-direction: column;
+  }
+
+  .colaboradores label {
+      font-weight: 800;
+      margin: 1%;
+  }
+
+  .colaboradores>input {
+      width: 100%;
+  }
+}
+
+.boton-file {
+  display: none; /* oculta el botón original */
+}
+
+.custom-file-input-label {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #DF8617;
+  color: #fff;
+  border: 1px solid #b96c0e;
+  border-radius: 4px;
+}
+
+
+/* Estilo para el botón real (invisble) */
+.custom-file-input {
+  position: absolute; 
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.custom-file-input-label:hover {
+  background-color: white;
+  color: #DF8617;
+}
+
 
 /****************** FOOTER ******************/
 
