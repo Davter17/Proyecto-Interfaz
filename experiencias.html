@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Experiences | Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/compass.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header class="bg-principal">
+        <div class="contenedor cabecera">
+            <nav id="movil" class="mostrar-movil">
+                <details>
+                    <summary class="color-secundario icon-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                            </path>
+                        </svg>
+                    </summary>
+                    <ul class="menu-movil">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="experiencias.html">Experiencias</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="btn"><button type="button">Iniciar sesión</button></li>
+                        <li class="btn"><button type="button">Alta usuario</button></li>
+                    </ul>
+                </details>
+            </nav>
+            <!-- inicio logo -->
+            <figure class="logo">
+                <a href="/">
+                    <img src="images/logopng.png" alt="Tenerife Experience">
+                </a>
+            </figure>
+
+            <!-- Inicio barra de navegación -->
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencias.html"">Experiencias</a></li>
+                    <li><a href="contaccto.html">Contacto</a></li>
+
+                    <!-- <li><a herf="#">Conócenos</a></li> -->
+                </ul>
+            </nav>
+
+            <!-- Caja con botenes para incio de sesión y dar de alta usuario -->
+            <div class="botones-sesion">
+                <button type="button">Iniciar sesión</button>
+                <button type="button">Alta usuario</button>
+            </div>
+
+            <button type="button" class="icon-user mostrar-movil">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 448 512">
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                </svg>
+            </button>
+
+        </div><!-- cierre contenedor -->
+
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- BREADCRUMBS -->
+    <section class="breadcrumbs">
+    <div class="contenedor">
+            <div class="breadcrumb flat">
+                <a href="/">Spain Experiences</a>
+                <a href="/">Inicio</a>
+                <a href="#" class="active">Experiencias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUERPO -->
+    <main>
+       <!-- BÚSQUEDA -->
+        <!-- Inicio de la segunda sección del cuerpo que contiene la caja de búsqueda -->
+        <section class="busqueda">
+            <h2>Área de busqueda</h2>
+            <div class="contenendor contenedor-busqueda">
+                <form action="#" class="formBuscar">
+                    <input type="search" id="inputBusqueda" name="busqueda color-principal" placeholder="Quiero ver...">
+                    <button type="submit" id="botonBusqueda" class="boton bg-principal color-secundario">Buscar</button>
+                </form>
+            </div>
+        </section>
+        <!-- FIN BÚSQUEDA -->
+
+        <!-- FILTROS DE EXPERIENCIAS -->
+        <section class="filtros">
+            <details>
+                <summary>
+                    <span class="boton bg-principal">Busqueda avanzanda</span>
+                </summary>
+                <div class="botones-filtros">
+                    <select name="personas" id="personas">
+                        <option value="">Personas</option>
+                        <option value=1-2">1-2</option>
+                        <option value="3-4">3-4</option>
+                        <option value="4+">4+</option>
+                    </select>
+                    <select name="localidad" id="localidad">
+                        <option value="">Localidad</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="aragon">Aragón</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="andalucia">Andalucía</option>
+                        <option value="catalunya">Cataluña</option>
+                        <option value="galicia">Galicia</option>
+                    </select>
+                    <select name="precio" id="precio">
+                    <option value="">Precio (€)</option>
+                    <option value="0-25">0-25</option>
+                    <option value="25-50">25-50</option>
+                    <option value="50-75">50-75</option>
+                    <option value="75-100">75-100</option>
+                </select>
+            </div>
+            </details>
+        </section>
+
+        <!-- FILTROS DE EXPERIENCIAS (MÓVIL)-->
+        <section class="filtros-movil">
+            <details>
+                <!-- Toggle de filtros (Móvil)-->
+                <summary class="abrir">
+                    <span class="boton bg-principal">Buequeda avanzanda</span>
+                    <!-- <button id="abrir-filtros">Filtros</button> -->
+                </summary>
+                <!-- Contenido -->
+                <div id="contenido-filtros" class="hidden">
+                    <div id="precio">
+                        <h3>Precio</h3>
+                        <button value="0-25">0-25</button>
+                        <button value="25-50">25-50</button>
+                        <button value="50-75">50-75</button>
+                        <button value="75-100">75-100</button>
+                    </div>
+                    <div id="location">
+                        <h3>Localidad</h3>
+                        <!-- Madrid-->
+                        <input type="checkbox" id="madrid" name="madrid">
+                        <label for="madrid">Madrid</label><br>
+                        <!-- Barcelona -->
+                        <input type="checkbox" id="barcelona" name="barcelona">
+                        <label for="barcelona">Barcelona</label><br>
+                        <!-- Aragón -->
+                        <input type="checkbox" id="aragon" name="aragon">
+                        <label for="aragon">Aragón</label><br>
+                        <!-- Extremadura -->
+                        <input type="checkbox" id="extremadura" name="extremadura">
+                        <label for="extremadura">Extremadura</label><br>
+                        <!-- Andalucía -->
+                        <input type="checkbox" id="andalucia" name="andalucia">
+                        <label for="andalucia">Andalucía</label><br>
+                        <!-- Cataluña -->
+                        <input type="checkbox" id="catalunya" name="catalunya">
+                        <label for="catalunya">Cataluña</label><br>
+                        <!-- Galicia-->
+                        <input type="checkbox" id="galicia" name="galicia">
+                        <label for="galicia">Galicia</label><br>
+                    </div>
+                    <div id="personas">
+                        <h3>Número de personas</h3>
+                        <button value="1-2">1-2</button>
+                        <button value="3-4">3-4</button>
+                        <button value="4+">4+</button>
+                    </div>
+                    <!-- <button id="cerrar-filtros">Cerrar</button> -->
+                </div>
+            </details>
+        </section>
+        <!-- FIN FILTROS DE EXPERIENCIAS -->
+
+        <!-- EXPERIENCIAS -->
+        <!-- Inicio de la tercera sección del cuepro, contiene una selección de experiencias -->
+        <section class="contenedor experiences-section">
+            <!-- Primera columna -->
+            <div class="experiencia-left">
+                <!-- Experiencia 1 -->
+                <a href="/experiencias/granada.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_alhambra.jpg" alt="Granada">
+                                <h3>Granada</h3>
+                                <p>Viaje de Ana y Luis a Granada</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">Granada</h3>
+                                <p class="card-text">
+                                    Viaje a la Alhambra: Lorena y Alicia eran unos amantes de la cultura y el arte, así
+                                    que
+                                    decidieron viajar a la Alhambra,
+                                    una de las maravillas del mundo árabe. Quedaron fascinadas con su arquitectura, sus
+                                    jardines y sus palacios.
+                                    Recorrieron el Patio de los Leones, la Sala de los Abencerrajes y el Palacio de
+                                    Carlos
+                                    V.
+                                    También disfrutaron de las vistas del Albaicín y la Sierra Nevada desde el Mirador
+                                    de
+                                    San Nicolás.
+                                    Lorena y Alicia se sintieron envueltas en la magia y el encanto de la Alhambra.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 2 -->
+
+                <a href="/experiencias/lacoruna.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_santiago.jpg" alt="Santiago de Compostela">
+                                <h3>Santiago de Compostela</h3>
+                                <p>Viaje de Carlos y sus amigos al Camino de Santiago</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">Santiago de Compostela, Galicia</h3>
+                                <p class="card-text">
+                                    Viaje al Camino de Santiago: Carlos y sus amigos eran unos aventureros y buscaban un
+                                    reto personal,
+                                    así que decidieron hacer el Camino de Santiago, una de las rutas de peregrinación
+                                    más
+                                    famosas del mundo.
+                                    Empezaron en Roncesvalles y recorrieron más de 700 kilómetros a pie, atravesando
+                                    paisajes variados y ciudades históricas.
+                                    Compartieron experiencias y anécdotas con otros peregrinos de diferentes países y
+                                    culturas. Llegaron a Santiago de Compostela
+                                    con una sensación de satisfacción y orgullo. Carlos y sus amigos se sintieron
+                                    transformados por el Camino de Santiago.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 3 -->
+                <a href="/experiencias/barcelona.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_gaudi.jpg" alt="Barcelona">
+                                <h3>Barcelona</h3>
+                                <p>Viaje de de Marta y Pedro a la Obra de Gaudí</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">La obra de Gaudí, Barcelona</h3>
+                                <p class="card-text">
+                                    Viaje a la obra de Gaudí: Marta y Pedro eran unos fanáticos del modernismo y la
+                                    originalidad, así que decidieron viajar a Barcelona, la ciudad de Gaudí,
+                                    uno de los genios de la arquitectura. Quedaron impresionados con sus obras maestras,
+                                    como la Sagrada Familia, el Parque Güell, la Casa Batlló y la Pedrera.
+                                    Descubrieron los detalles, los símbolos y las formas de su estilo único e innovador.
+                                    También disfrutaron de la gastronomía, el ambiente y la cultura de Barcelona. Marta
+                                    y Pedro se sintieron inspirados por la obra de Gaudí.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Segunda columna -->
+            <div class="experiencia-mid">
+                <!-- Experiencia 4 -->
+                <a href="/experiencias/madrid.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_madrid.jpg" alt="Madrid">
+                                <h3>Madrid</h3>
+                                <p>Viaje de Laura y David al Museo del Prado, Madrid</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class=" card-back">
+                                <h3 class="card-title">El Museo del Prado, Madrid</h3>
+                                <p class="card-text">
+                                    Viaje al Museo del Prado: Laura y David eran unos apasionados de la pintura y el
+                                    arte,
+                                    así que decidieron viajar al Museo del Prado,
+                                    uno de los museos más importantes del mundo. Quedaron asombrados con las obras de
+                                    los
+                                    grandes maestros, como Velázquez, Goya, El Greco y Rubens.
+                                    Contemplaron el famoso cuadro de Las Meninas, el majestuoso retrato de Carlos V y el
+                                    impactante Saturno devorando a su hijo.
+                                    También visitaron otras salas, donde admiraron esculturas, dibujos y grabados. Laura
+                                    y
+                                    David se sintieron enriquecidos por el Museo del Prado.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 5 -->
+                <a href="/experiencias/valencia.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_valencia.jpg" alt="Valencia">
+                                <h3>Valencia</h3>
+                                <p>Viaje de Sara y Miguel a la paella valenciana, Valencia</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">La paella valenciana, Valencia</h3>
+                                <p class="card-text">
+                                    Viaje a la paella valenciana: Sara y Miguel eran unos amantes de la gastronomía y el
+                                    sabor, así que decidieron viajar a Valencia,
+                                    la cuna de la paella, uno de los platos más típicos y deliciosos de España. Quedaron
+                                    encantados con la receta tradicional, que lleva arroz,
+                                    pollo, conejo, judías verdes, garrofón y azafrán. Aprendieron a cocinarla en una
+                                    escuela
+                                    especializada, donde les enseñaron los trucos y los
+                                    secretos para conseguir el punto perfecto. También degustaron otras variedades, como
+                                    la
+                                    de marisco, la de verduras y la de carne.
+                                    Sara y Miguel se sintieron satisfechos con la paella valenciana.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 6 -->
+                <a href="/experiencias/sevilla.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_sevilla.jpg" alt="Sevilla">
+                                <h3>Sevilla</h3>
+                                <p>Viaje de Eva y Juan al flamenco, España</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">El flamenco, Sevilla</h3>
+                                <p class="card-text">
+                                    Viaje al flamenco: Eva y Juan eran unos amantes de la música y el baile, así que
+                                    decidieron viajar a Sevilla, la capital del flamenco,
+                                    una de las expresiones artísticas más auténticas y emocionantes de España. Quedaron
+                                    cautivados con el espectáculo de cante, guitarra y baile,
+                                    que les transmitió la pasión, el duende y el arte de los artistas. Aprendieron a
+                                    bailar
+                                    sevillanas en una academia, donde
+                                    les enseñaron los pasos, las palmas y las castañuelas. También disfrutaron de la
+                                    fiesta,
+                                    el color y la alegría de la Feria de Abril.
+                                    Eva y Juan se sintieron vivos con el flamenco.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 7 -->
+                <a href="/experiencias/cantabria.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_cantabria.jpg" alt="Cantabria">
+                                <h3>Cantabria</h3>
+                                <p>Viaje de Martín y Julia a Altamira, Cantabria</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">La cueva de Altamira, Cantabria</h3>
+                                <p class="card-text">
+                                    Viaje a la cueva de Altamira: Martín y Julia eran unos amantes de la prehistoria y
+                                    el
+                                    arte rupestre, así que decidieron viajar a la cueva de Altamira,
+                                    una de las joyas del patrimonio mundial. Quedaron maravillados con las pinturas de
+                                    bisontes, ciervos y caballos, que datan de hace más de 15.000 años.
+                                    Apreciaron la técnica, el color y el realismo de los artistas paleolíticos. También
+                                    visitaron el museo, donde aprendieron sobre la vida, la cultura y
+                                    el arte de los primeros humanos. Martín y Julia se sintieron conectados con la cueva
+                                    de
+                                    Altamira.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </a>
+
+            <div class="experiencia-right">
+                <!-- Experiencia 8 -->
+                <a href="/experiencias/vizcaya.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_bilbao.jpg" alt="Bilbao">
+                                <h3>Bilbao</h3>
+                                <p>Viaje de Clara y Pablo al Museo Guggenheim, Bilbao</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">El Museo Guggenheim, Bilbao</h3>
+                                <p class="card-text">
+                                    Viaje al Museo Guggenheim: Clara y Pablo eran unos amantes del arte contemporáneo y
+                                    el
+                                    diseño, así que decidieron viajar al Museo Guggenheim, una de las
+                                    obras más emblemáticas de la arquitectura del siglo XX. Quedaron impresionados con
+                                    su
+                                    edificio de titanio, que se asemeja a un barco o a un pez. Admiraron
+                                    las obras de artistas como Picasso, Kandinsky, Warhol y Dalí. También se divirtieron
+                                    con
+                                    las esculturas de Puppy, la araña gigante y el tulipán. Clara y Pablo
+                                    se sintieron estimulados por el Museo Guggenheim.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Experiencia 9 -->
+                <a href="/experiencias/huesca.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_huesca.jpg" alt="Huesca">
+                                <h3>Huesca</h3>
+                                <p>Viaje de Raúl y Elena al Parque Nacional de Ordesa y Monte Perdido, Huesca</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">El Parque Nacional de Ordesa y Monte Perdido, Huesca</h3>
+                                <p class="card-text">
+                                    Viaje al Parque Nacional de Ordesa y Monte Perdido: Raúl y Elena eran unos amantes
+                                    de la
+                                    naturaleza y el senderismo, así que decidieron viajar al Parque Nacional de
+                                    Ordesa y Monte Perdido, una de las joyas naturales de los Pirineos. Quedaron
+                                    maravillados con sus paisajes, sus bosques, sus cascadas y sus montañas. Recorrieron
+                                    el
+                                    Valle de Ordesa, el Cañón de Añisclo, la Garganta de Escuaín y el Valle de Pineta.
+                                    También avistaron animales como el quebrantahuesos, el sarrio y el rebeco. Raúl y
+                                    Elena se sintieron en armonía con el Parque Nacional de Ordesa y Monte Perdido.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Experiencia 10 -->
+                <a href="/experiencias/tenerife.html">
+                    <div class="experiencia card-container">
+                        <div class="card-body">
+                            <div class="card-front">
+                                <img src="images/experiencias/exp_tenerife.jpg" alt="Tenerife">
+                                <h3>Santa Cruz de Tenerife</h3>
+                                <p>Viaje de Ana y Carlos a El Teide; Tenerife</p>
+                            </div>
+                            <!-- Reverso Experiencia -->
+                            <div class="card-back">
+                                <h3 class="card-title">El Teide, Santa Cruz de Tenerife</h3>
+                                <p class="card-text">
+                                    Viaje al Teide: Ana y Carlos eran unos amantes de la aventura y la astronomía, así
+                                    que
+                                    decidieron viajar al Teide, el pico más alto de España y uno de los volcanes más
+                                    activos del mundo. Quedaron asombrados con su paisaje lunar, sus rocas volcánicas y
+                                    su
+                                    flora endémica. Subieron en teleférico hasta la cima, desde donde contemplaron
+                                    unas vistas impresionantes de la isla. También disfrutaron de un cielo estrellado,
+                                    donde
+                                    observaron las constelaciones y los planetas con un telescopio. Ana y Carlos
+                                    se sintieron fascinados por el Teide.
+                                </p>
+                                <div class="icons_buttons">
+                                    <ul>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                                                </svg>
+                                            </a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                    <path
+                                                        d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
+                                                </svg></a></li>
+                                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- FIN EXPERIENCIAS -->
+    </main>
+    <!-- FIN CUERPO -->
+
+
+    <!--  INICIO FOOTER -->
+    <footer class="bg-principal color-secundario">
+        <div class="contenedor contenedor-footer">
+            <div class="logoFooter">
+                <figure class="logo">
+                    <a href="/">
+                        <img src="images/logopng.png" alt="Tenerife Experience">
+                    </a>
+                </figure>
+            </div>
+            <div class="caja-footer">
+                <ul class="iconos-redes">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" viewBox="0 0 512 512">
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" viewBox="0 0 448 512">
+
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="20" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="enlaces">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politica privacidad</a></li>
+                    <li><a href="#">© Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- FIN FOOTER-->
+</body>
+
+</html>
