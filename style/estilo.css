@@ -1423,13 +1423,15 @@ footer .enlaces a:hover {
   transform: scale(1.5);
 }
 
-
+.nuevoUsuario .formNuevoUsuario,
 .contacto .formContacto{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.nuevoUsuario .formNuevoUsuario input,
+.nuevoUsuario .formNuevoUsuario textarea,
 .contacto .formContacto input,
 .contacto .formContacto textarea{
   width: 100%;

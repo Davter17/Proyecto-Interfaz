@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain Experiences | Contacto</title>
+    <title>Spain Experiences | Alta Usuario</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                             <path
                                 d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-                            </path>
+                            </path> 
                         </svg>
                     </summary>
                     <ul class="menu-movil">
@@ -30,7 +30,7 @@
                         <li><a href="/experiencias.html">Experiencias</a></li>
                         <li><a href="/contacto.html">Contacto</a></li>
                         <li class="btn"><button type="button">Iniciar sesión</button></li>
-                        <li class="btn"><a href="/alta_usuario.html"><button type="button">Alta usuario</button></a></li>
+                        <li class="btn"><button type="button"><a href="/alta_usuario.html">Alta uuario</a></button></li>
                     </ul>
                 </details>
             </nav>
@@ -82,23 +82,27 @@
     <!-- FIN MIGAS DE PAN -->
     <!-- **********************inicio cuerpo -->
     <!-- MAIN -->
-    <main class="contacto">
+    <main class="nuevoUsuario">
     
         <div class="contenedor">
 
             <section class="busqueda">
-                <h2>Formulario de contacto</h2>
-                    <form action="#" class="formContacto">
+                <h2>Alta de nuevo usuario</h2>
+                    <form action="#" class="formNuevoUsuario">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" class=" color-principal" placeholder="Nombre...">
                         <label for="apellidos">Apellidos</label>
                         <input type="text" id="apellidos" name="apellidos" class=" color-principal" placeholder="Apellidos...">
                         <label for="email">Correo electrónico</label>
                         <input type="email" id="email" name="" class=" color-principal" placeholder="Email...">
+                        <label for="descripcion">Descripción</label>
+                        <textarea  name="descripcion" id="descripcion" rows="10"></textarea>
+                        <label for="password">Pasword</label>
+                        <input type="password" name="password" id="password" class=" color-principal" placeholder="password...">          
+                        <label for="password2">Confirmar pasword</label>
+                        <input type="password" name="password2" id="password2" class=" color-principal" placeholder="password...">  
                         <label for="telefono">Teléfono</label>
-                        <input type="phone" name="telefono" id="telefono" class=" color-principal" placeholder="teléfono...">                            
-                        <label for="mensaje">Mensaje</label>
-                        <textarea  name="mensaje" id="mensaje" rows="10"></textarea>
+                        <input type="phone" name="telefono" id="telefono" class=" color-principal" placeholder="teléfono...">                    
                         <button type="submit" class="boton bg-principal color-secundario">Enviar</button>
                     </form>
                 </div>
