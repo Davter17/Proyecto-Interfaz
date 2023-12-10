@@ -1315,6 +1315,9 @@ input[type="file"] {
   border-radius: 4px;
 }
 
+.inisesion{
+  margin-bottom: 190px;
+}
 
 /* Estilo para el botón real (invisble) */
 .custom-file-input {
