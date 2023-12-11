@@ -1,0 +1,706 @@
+* {
+  font-family: "Comfortaa", sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* propiedades del header, contiene:logo,menu y botones */
+header {
+  height: 100px;
+}
+
+.bg-principal {
+  background-color: rgb(223 134 23);
+}
+
+.bg-secundario {
+  background-color: rgb(234, 225, 199);
+}
+
+.color-principal,
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(223 134 23);
+}
+
+.color-secundario {
+  color: rgb(234, 225, 199);
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header figure.logo img,
+footer figure.logo img {
+  height: 100px;
+}
+
+header svg,
+footer svg {
+  fill: #eae1c7;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav#movil {
+  position: relative;
+}
+
+nav#movil summary {
+  position: relative;
+  list-style: none;
+}
+
+nav#movil .menu-movil {
+  width: max-content;
+  padding: 0;
+  border: 1px solid rgb(223 134 23);
+  background-color: rgb(234, 225, 199);
+  z-index: 1000;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav#movil .menu-movil li {
+  min-width: 480px; /*min-width:735px; --- para tablet*/
+
+  text-align: center;
+}
+
+nav#movil .menu-movil li.btn {
+  padding: 1px 0;
+  border-bottom: 1px solid rgb(223 134 23);
+}
+
+nav#movil .menu-movil li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(223 134 23);
+}
+
+figure.logo {
+  height: 100px;
+  margin: 0;
+}
+
+
+/* Estilos para el dropdown de Colecciones */
+nav#movil .menu-movil .colecciones-dropdown {
+    position: relative;
+  }
+  
+  nav#movil .menu-movil .colecciones-dropdown:hover ul {
+    display: block;
+  }
+  
+  nav#movil .menu-movil .colecciones-dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(234, 225, 199);
+    border: 0.5px solid rgb(223 134 23);
+    z-index: 1001;
+    width: 438px; 
+  }
+  
+  nav#movil .menu-movil .colecciones-dropdown ul div a {
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 0.5px solid rgb(223 134 23);
+    display: block;
+    padding: 10px;
+    margin-right: 40px;   
+  }
+  
+  nav#movil .menu-movil .colecciones-dropdown ul div a:hover {
+    text-decoration:underline;
+  }
+  
+  nav#movil .menu-movil .colecciones-dropdown ul div:last-child a {
+    border-bottom: none;
+  }
+  
+
+/*fin de los estilos de las colecciones*/
+
+.mostrar-movil {
+  display: none;
+}
+
+#login-container {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 999;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+#login-form a {
+  color: rgb(57, 57, 233); /* Cambiar el color del enlace*/
+  text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+#login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#chat-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #af4c4c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login_usuario {
+  cursor: pointer;
+}
+
+/* Estilos del chat */
+#chat-container {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 999;
+}
+
+#chat-container {
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+#contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#contact-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-info {
+  flex-grow: 1;
+}
+
+.contact-info h3 {
+  margin: 0 0 5px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Fin Estilos del chat */
+
+a.nav-link {
+  margin-right: 0;
+  color: white;
+  text-decoration: none;
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus {
+  border-bottom: solid 1.8px #ffffff;
+}
+
+#menu-principal ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+#menu-principal li a {
+  color: rgb(234, 225, 199);
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+#menu-principal li a:hover {
+  border-bottom: 1px solid rgb(234, 225, 199);
+}
+
+header .botones_redondos {
+  margin: 12px;
+}
+
+header .botones_redondos a {
+  margin: 6px;
+}
+
+/*********SECCIÓN MAPA ******************/
+
+.contenedor-mapa {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-mapa h2 {
+  text-align: left;
+}
+
+.mapa {
+  margin: auto;
+  max-width: 700px;
+  width: 100%;
+  min-width: 350px;
+}
+
+.mapa svg path {
+  fill: rgb(223 134 23);
+}
+
+.mapa svg a:hover path {
+  fill: rgb(186, 110, 18);
+  /* fill: rgb(150 150 150); */
+}
+
+/*********SECCIÓN BUSQUEDA ******************/
+/* propiedades de la seccion2 donde se encuentra la caja de busqueda */
+
+.busqueda h2 {
+  text-align: center;
+}
+
+.contenedor-busqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.busqueda {
+  align-content: center;
+  text-align: center;
+  margin: 50px 0;
+}
+
+input,
+.boton {
+  margin: 0;
+  border-radius: 3px;
+  border: 1px solid rgb(223 134 23);
+  padding: 0.5em 2em;
+}
+
+.boton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(223 134 23);
+}
+
+/*********SECCIÓN EXPERIENCIAS ******************/
+
+/* Tercera sección - Exoeriencias de usuario */
+.experiences-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiencia-left,
+.experiencia-mid,
+.experiencia-right {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiencia {
+  padding: 20px;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.experiencia img {
+  max-height: 400px;
+  max-width: 300px;
+  width: 100%;
+  padding: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.experiencia h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  margin: 0;
+}
+
+.experiencia p {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 0;
+}
+
+.card-body {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  perspective: 800;
+  -webkit-perspective: 800;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+}
+
+.card-body .card-title {
+  font-family: "Luta", sans-serif;
+  margin-top: 50px;
+}
+
+.experiencia h3 {
+  margin-top: 15px;
+}
+
+.card-body:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  padding: 2px;
+}
+
+.card-front img {
+}
+
+.card-back {
+  align-items: center;
+  background-color: #fdfeff;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  -webkit-backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: rotateY(180deg);
+  width: 100%;
+  border: 5px solid rgb(223 134 23);
+}
+
+.card-back p {
+  color: #333;
+}
+
+.card-back .card-title {
+  color: rgb(223 134 23);
+}
+
+.card-title {
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card-back .card-text {
+  padding: 20px;
+  text-align: justify;
+}
+
+/*
+.seccion-experiencias {
+    margin: 20px 0;
+}
+
+.seccion-experiencias h2 {
+    text-align: center;
+}
+
+.experiencias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.seccion-experiencias article {
+    flex-basis: 32%;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.seccion-experiencias article:hover {
+    background-color: rgb(234, 225, 199);
+}
+
+.seccion-experiencias article a {
+    text-decoration: none;
+}
+
+.seccion-experiencias article img {
+    width: 100%;
+}
+
+.seccion-experiencias article p,
+.seccion-experiencias article h4 {
+    padding: 0 10%;
+}
+
+
+/********* FOOTER *********/
+
+footer {
+  min-height: 110px;
+}
+
+footer a {
+  color: rgb(234, 225, 199);
+  text-decoration: none;
+}
+
+footer .contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .caja-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .iconos-redes,
+footer .enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+footer .enlaces a:hover {
+  text-decoration: underline;
+}
+
+/***********SECCION IMAGEN PRINCIPAL ************/
+
+.imagen-principal {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**********SECCION GALERIA IMAGENES *************/
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagenes > div {
+  flex-basis: 20%;
+  overflow: hidden;
+  display: flex;
+  height: 160px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 225, 199);
+  background-color: rgb(30, 30, 30);
+  border-radius: 3px;
+}
+
+.imagenes a {
+  height: 100%;
+}
+
+.imagenes img {
+  height: 100%;
+  transition: transform 1s;
+}
+
+.imagenes iframe {
+  height: 100%;
+}
+
+.imagenes img:hover {
+  transform: scale(1.5);
+}
+
+/* ----- breakpoint para controlar punt de ruptura del margen --- */
+@media only screen and (max-width: 1050px) {
+  .contenedor {
+    margin: 0 2%;
+  }
+}
+
+/* --------breakpoints para tablets < 768 px */
+@media only screen and (max-width: 768px) {
+  header nav,
+  header .botones-sesion {
+    display: none;
+  }
+
+  header .botones_redondos {
+    margin: 10px;
+  }
+
+  header .botones_redondos a {
+    margin: 3px;
+  }
+
+  header .figure {
+    align-self: center;
+  }
+
+  header .mostrar-movil {
+    display: block;
+  }
+
+  .contenedor {
+    margin: 0 2%;
+  }
+
+  .seccion-experiencias article {
+    flex-basis: 49%;
+  }
+
+  footer .contenedor-footer {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  footer .enlaces {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .iconos-redes,
+  footer .enlaces {
+    justify-content: center;
+  }
+}
+
+/* --------breakpoints para movil < 600 px */
+@media only screen and (max-width: 600px) {
+  /* Estilos referentes al header*/
+  header nav,
+  header .botonesSesion {
+    display: none;
+  }
+
+  header .botones_redondos {
+    margin: 10px;
+  }
+
+  header .botones_redondos a {
+    margin: 3px;
+  }
+
+  header .contenedor {
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+  /* Fin del estilos referentes al header*/
+  .seccion-experiencias article {
+    flex-basis: 100%;
+  }
+}
