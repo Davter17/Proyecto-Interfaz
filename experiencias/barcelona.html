@@ -13,61 +13,78 @@
 </head>
 
 <body>
-    <!-- CABECERA -->
+   <!-- CABECERA -->
     <header class="bg-principal">
-        <div class="contenedor cabecera">
-            <nav id="movil" class="mostrar-movil">
-                <details>
-                    <summary class="color-secundario icon-user">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                            <path
-                                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-                            </path>
-                        </svg>
-                    </summary>
-                    <ul class="menu-movil">
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/experiencias.html">Experiencias</a></li>
-                        <li><a href="/contacto.html">Contacto</a></li>
-                        <li class="btn"><button type="button">Iniciar sesión</button></li>
-                        <li class="btn"><a href="/alta_usuario.html"><a href="/alta_usuario.html"><button type="button">Alta usuario</button></a></a></li>
-                    </ul>
-                </details>
-            </nav>
-            <!-- inicio logo -->
-            <figure class="logo">
-                <a href="/">
-                    <img src="/images/logopng.png" alt="Tenerife Experiencie">
-                </a>
-            </figure>
+      <div class="contenedor cabecera">
+        <nav id="movil" class="mostrar-movil">
+          <details>
+            <summary class="color-secundario icon-user">
+              <svg xmlns="http://www.w3.org/2000/svg"  height="35" viewBox="0 0 16 16">
+                <path d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+              </svg>
+            </summary>
+            
+            <ul class="menu-movil"> 
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/experiencias.html">Experiencias</a></li>
+              <li><a href="/contacto.html">Contacto</a></li> 
+            </ul>
+          </details>
+        </nav>
+        <!-- inicio logo -->
+        <figure class="logo">
+          <a href="/">
+            <img src="/images/logopng.png" alt="Spain Experience" />
+          </a>
+        </figure>
 
-            <!-- Inicio barra de navegación -->
-            <nav id="menu-principal">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/experiencias.html">Experiencias</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
+        <!-- inicio barra navegación -->
+        <nav id="menu-principal">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/experiencias.html">Experiencias</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
 
-                    <!-- <li><a herf="#">Conócenos</a></li> -->
-                </ul>
-            </nav>
+        <div class="botones_redondos"> <!-- caja con botenes para new-experiencias, inicio de sesion, chat-->
+            <a type="button" href=""> <!--Aquí toca el link a la pagina de crear una nueva experiencia-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="35">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"></path>
+            </svg>
+            </a>
+            
+            
+          
+            <a type="button" class="login_usuario" onclick="toggleLogin()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="35">
+                <path d="M4.243 4.757a3.757 3.757 0 1 1 5.851 3.119 6.006 6.006 0 0 1 3.9 5.339.75.75 0 0 1-.715.784H2.721a.75.75 0 0 1-.714-.784 6.006 6.006 0 0 1 3.9-5.34 3.753 3.753 0 0 1-1.664-3.118Z"></path>
+              </svg>
+          </a>
 
-            <!-- Caja con botenes para incio de sesión y dar de alta usuario -->
-            <div class="botones-sesion">
-                <button type="button">Iniciar sesión</button>
-                <a href="/alta_usuario.html"><a href="/alta_usuario.html"><button type="button">Alta usuario</button></a></a>
-            </div>
-
-            <button type="button" class="icon-user mostrar-movil">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 448 512">
-                    <path
-                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+            <a type="button" onclick="toggleChat()"> <!--Aquí toca chat-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="35">
+                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"></path><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"></path>
                 </svg>
-            </button>
+            </a>
+        </div> <!-- caja con botenes redondos-->
 
-        </div><!-- cierre contenedor -->
-
+        <div id="login-container"> <!--contenedor del formulario de inicio de sesión-->
+          <h2>¡Bienvenido de nuevo!</h2>
+          <form id="login-form">
+              <input type="text" id="usuario" placeholder="Nombre de usuario o correo electrónico" required>
+              <input type="password" id="contraseña" placeholder="Constraseña" required>
+              <p>¿Olvidaste tu <a href="">usuario</a> / <a href="">contraseña</a>?</p>
+              <button type="button" onclick="login()">Iniciar sesión</button>
+              <p>¿Eres nuevo? <a href="">Registrate</a></p>              
+          </form>
+      </div>
+      <div id="chat-container">
+        <h3>Registrate para acceder a la zona de chat</h3>
+      </div>
+      <!-- cierre contenedor -->
     </header>
+    <!-- FIN HEADER -->
     <!-- FIN HEADER -->
     <!-- BREADCRUMBS -->
     <section class="breadcrumbs">
