@@ -79,60 +79,60 @@
         </section>
     </div>
 
-<main>
-    <!-- Formulario -->
-    <div class="divformulario contenedor">
-        <form class="form_nueva_experiencia" action="">
-            <div class="tit_cat">
-                <!-- Título experiencia -->
-                <label for="titulo_nuevaexp">Título de la experiencia</label>
-                <input type="text" placeholder="Título de la experiencia" id="titulo_nuevaexp" name="titulo_nueva_exp">
+    <main>
+        <!-- Formulario -->
+        <div class="divformulario contenedor">
+            <form class="form_nueva_experiencia" action="">
+                <div class="tit_cat">
+                    <!-- Título experiencia -->
+                    <label for="titulo_nuevaexp">Título de la experiencia</label>
+                    <input type="text" placeholder="Título de la experiencia" id="titulo_nuevaexp" name="titulo_nueva_exp">
+                    
+                    <label for="selcat">Categoría de la experiencia:</label>
+                    <select class="selcat" name="selcat" id="selcat">
+                        <option value="" selected>Selecciona Categoría</option>
+                        <option value="cat1">Categoría 1</option>
+                        <option value="cat2">Categoría 2</option>
+                        <option value="cat3">Categoría 3</option>
+                        <option value="cat4">Categoría 4</option>
+                    </select>
+                </div>
+    
+                <!-- Textarea descripción experiencia -->
+                <div class="textoarea">
+                    <label for="descripcion_nuevaexp">Descripción de la experiencia</label>
+                    <input type="textarea"  placeholder="Descripción de la experiencia..." name="descripcion_nuevaexp" id="descripcion_nuevaexp">
+                </div>
+    
+                <div class="imagenes_nuevaexp">
+                    <!-- Imagen principal -->
+                    <label class="custom-file-input-wrapper" for="imgprincipal_nuevaexp">
+                        <label for="">Imagen Principal</label>
+                        <span class="custom-file-input-label">Seleccionar Archivo</span>
+                        <input class="custom-file-input" type="file" name="imgprincipal_nuevaexp" id="imgprincipal_nuevaexp">
+                    </label>
                 
-                <label for="selcat">Categoría de la experiencia:</label>
-                <select class="selcat" name="selcat" id="selcat">
-                    <option value="" selected>Selecciona Categoría</option>
-                    <option value="cat1">Categoría 1</option>
-                    <option value="cat2">Categoría 2</option>
-                    <option value="cat3">Categoría 3</option>
-                    <option value="cat4">Categoría 4</option>
-                </select>
-            </div>
-
-            <!-- Textarea descripción experiencia -->
-            <div class="textoarea">
-                <label for="descripcion_nuevaexp">Descripción de la experiencia</label>
-                <input type="textarea"  placeholder="Descripción de la experiencia..." name="descripcion_nuevaexp" id="descripcion_nuevaexp">
-            </div>
-
-            <div class="imagenes_nuevaexp">
-                <!-- Imagen principal -->
-                <label class="custom-file-input-wrapper" for="imgprincipal_nuevaexp">
-                    <label for="">Imagen Principal</label>
-                    <span class="custom-file-input-label">Seleccionar Archivo</span>
-                    <input class="custom-file-input" type="file" name="imgprincipal_nuevaexp" id="imgprincipal_nuevaexp">
-                </label>
-            
-                <label class="custom-file-input-wrapper" for="otrosmedia_nuevaexp">
-                    <label for="">Más imágenes y vídeos</label>
-                    <span class="custom-file-input-label">Seleccionar Archivo</span>
-                    <input class="custom-file-input" type="file" name="otrosmedia_nuevaexp" id="otrosmedia_nuevaexp">
-                </label>
-            </div>
-            
-
-            <!-- Añadir colaboradores -->
-            <div class="colaboradores">
-                <label for="addcolaborador">Añadir colaboradores</label>
-                <input type="text" placeholder="johndoe@gmail.com" name="addcolaborador" id="addcolaborador">
-            </div>
-
-            <!-- Enviar -->
-            <div class="enviar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </div>
-</main>
+                    <label class="custom-file-input-wrapper" for="otrosmedia_nuevaexp">
+                        <label for="">Más imágenes y vídeos</label>
+                        <span class="custom-file-input-label">Seleccionar Archivo</span>
+                        <input class="custom-file-input" type="file" name="otrosmedia_nuevaexp" id="otrosmedia_nuevaexp">
+                    </label>
+                </div>
+                
+    
+                <!-- Añadir colaboradores -->
+                <div class="colaboradores">
+                    <label for="addcolaborador">Añadir colaboradores</label>
+                    <input type="text" placeholder="johndoe@gmail.com" name="addcolaborador" id="addcolaborador">
+                </div>
+    
+                <!-- Enviar -->
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
 
 <!--  INICIO FOOTER -->
 <footer class="bg-principal color-secundario">

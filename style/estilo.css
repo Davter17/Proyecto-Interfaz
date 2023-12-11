@@ -1203,10 +1203,6 @@ input[type="textarea"] {
   color: #DF8617;
 }
 
-input[type="file"] {
-  width: 70%;
-  /* min-height: 150px; */
-}
 
 .imagenes_nuevaexp>label {
   margin: 20px;
